@@ -1,0 +1,6 @@
+Not Found: /
+"GET / HTTP/1.1" 404 2396
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2447
+Method Not Allowed: /api/landing/create-contact/
+"GET /api/landing/create-contact/ HTTP/1.1" 405 12653
