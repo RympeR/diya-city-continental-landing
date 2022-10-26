@@ -1,31 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import { LangProvider } from "./utils/LangProvider";
-// import React, { useContext, useEffect, useState } from "react";
-// const { currentLang } = useContext(LangContext);
+import { LangProvider } from "./LangProvider";
+
+import { AboutBlock } from "./components/ContentBlocks/AboutBlock";
+import { ConvenienceBlock } from "./components/ContentBlocks/ConvenienceBlock";
+import { DigitsBlock } from "./components/ContentBlocks/DigitsBlock";
+import { FooterBlock } from "./components/ContentBlocks/FooterBlock";
+import { IndustriesBlock } from "./components/ContentBlocks/IndustriesBlock";
+import { ResidentBlock } from "./components/ContentBlocks/ResidentBlock";
+import { SolutionsBlock } from "./components/ContentBlocks/SolutionsBlock";
+import { TechBlock } from "./components/ContentBlocks/TechBlock";
+import { TitleBlock } from "./components/ContentBlocks/TitleBlock";
 
 function App() {
   return (
     <LangProvider>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <AboutBlock />
+      <ConvenienceBlock />
+      <DigitsBlock />
+      <FooterBlock />
+      <IndustriesBlock />
+      <ResidentBlock />
+      <SolutionsBlock />
+      <TechBlock />
+      <TitleBlock />
     </LangProvider>
-
   );
 }
 

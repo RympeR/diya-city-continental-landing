@@ -1,10 +1,10 @@
-import React, { createContext, ReactNode, useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import langData from "../public/text/index.json";
 
 export const LangContext = createContext(null);
 
 export const LangProvider = ({ children }) => {
-  const [currentLang, setCurrentLang] = useState<any>(langData.EN);
+  const [currentLang, setCurrentLang] = useState(langData.EN);
 
   useEffect(() => {
     if (localStorage.getItem('hypefansLang') === "EN") {
