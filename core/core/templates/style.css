@@ -1,0 +1,98 @@
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+.first-block {
+    border-radius: 40px;
+    background-color: #fff;
+    z-index: 3;
+}
+
+.anchor-text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.text-title-first-block {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    color: #000000;
+}
+
+.gradient-text {
+    background: linear-gradient(270deg, #9C60FF 1.28%, #000000 99.39%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.under-title-text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #000000;
+}
+
+.m-top-15r {
+    margin-top: 15rem;
+}
+
+.write-btn {
+
+    /* identical to box height */
+
+    /* Note: backdrop-filter has minimal browser support */
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    /* background: rgba(255, 255, 255, 0.27); */
+    color: #FFFFFF;
+    border-radius: 95px;
+    background: linear-gradient(90deg, #030205 0%, #9C5FFE 89.58%);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+    width: 164px;
+    height: 39px;
+    border-radius: 95px;
+    backdrop-filter: blur(41.5px);
+
+}
+
+.second-block {
+    height: 260px;
+    margin-top: -15px;
+    /* background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0.01%, rgba(255, 255, 255, 0) 99.5%, rgba(255, 255, 255, 0.59) 99.5%), url(image.png); */
+    background-image: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0.01%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/block-2.svg');
+    background-size: 100%;
+    z-index: 1;
+}
+
+.white-title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+
+.diya-image {
+    margin-left: 5rem;
+    width: 149px;
+    height: 72px;
+}
