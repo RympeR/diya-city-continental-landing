@@ -3,6 +3,7 @@
 body {
     background-color: #000000;
     overflow-x: hidden;
+    font-family: 'Gilroy-Bold', sans-serif;
 }
 
 
@@ -23,10 +24,20 @@ body {
 /*!!block styles*/
 
 .first-block {
-    border-radius: 40px;
     background-color: #fff;
     z-index: 3;
 }
+
+.button-between-ua-en {
+    border: none;
+    background: transparent;
+    margin-left: 2px;
+    margin-right: 2px;
+    outline: 0ch;
+}
+
+
+
 
 
 
@@ -46,6 +57,46 @@ body {
     background-color: #000000;
     background-size: 100%;
 }
+
+.convenience-h3 {
+    margin-top: 133px;
+    margin-bottom: 147px;
+    display: flex;
+    justify-content: center;
+}
+.cards-block-convenience-1  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    
+    
+}
+
+.cards-block-convenience-2  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    
+}
+
+
+
+.card  {
+    width: 300px;
+    font-size: 24px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+}
+
 
 .block-4{
     background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/block-4-bg.svg');
@@ -98,7 +149,7 @@ body {
     color: #FFFFFF;
 }
 .white-title {
-    font-family: 'Gilroy';
+    font-family: 'Gilroy-Bold', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
@@ -130,8 +181,9 @@ body {
     font-size: 12px;
     line-height: 15px;
     /* identical to box height */
-    color: #000000;
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    
 }
 
 .small-white-text {
@@ -159,16 +211,15 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .under-title-text {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 16px;
-
     color: #000000;
 }
 
@@ -224,6 +275,9 @@ body {
     height: 39px;
     border-radius: 95px;
     backdrop-filter: blur(41.5px);
+    border: 0px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.30), 0 10px 10px rgba(0,0,0,0.60);
+    
 
 }
 
