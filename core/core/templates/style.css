@@ -204,6 +204,17 @@ body {
 
 }
 
+.industries-text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+
 /*!! custom elements styles*/
 
 .write-btn {
