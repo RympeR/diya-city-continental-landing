@@ -3,14 +3,25 @@
 body {
     background-color: #000000;
     overflow-x: hidden;
-    font-family: 'Gilroy-Bold', sans-serif;
 }
 
 
 /*!!custom layout styles*/
 
+.pd-top-7r {
+    padding-top: 7rem;
+}
+
+.pd-bot-4r {
+    padding-bottom: 4rem;
+}
+
 .m-top-15r {
     margin-top: 15rem;
+}
+
+.m-top-26r {
+    margin-top: 26rem;
 }
 
 .m-top-8r {
@@ -21,23 +32,17 @@ body {
     margin-left: 10rem !important;
 }
 
+.revert-margin-t {
+    margin-top: revert !important;
+}
+
 /*!!block styles*/
 
 .first-block {
+    border-radius: 40px;
     background-color: #fff;
     z-index: 3;
 }
-
-.button-between-ua-en {
-    border: none;
-    background: transparent;
-    margin-left: 2px;
-    margin-right: 2px;
-    outline: 0ch;
-}
-
-
-
 
 
 
@@ -58,47 +63,7 @@ body {
     background-size: 100%;
 }
 
-.convenience-h3 {
-    margin-top: 133px;
-    margin-bottom: 147px;
-    display: flex;
-    justify-content: center;
-}
-.cards-block-convenience-1  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
-    
-    
-}
-
-.cards-block-convenience-2  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
-    
-}
-
-
-
-.card  {
-    width: 300px;
-    font-size: 24px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 60px;
-}
-
-
-.block-4{
+.block-4 {
     background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/block-4-bg.svg');
     height: 1212px;
     background-size: 100%;
@@ -124,9 +89,30 @@ body {
 }
 
 .seventh-block {
-    height: 600px;
+    height: 450px;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7);
     border-radius: 25px;
+}
+
+.eigth-block {
+    height: 850px;
+    background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.6) 100%), url('./images/industreies.svg');
+    background-size: 101%;
+    background-repeat: no-repeat;
+}
+
+.nine-block {
+    height: 663px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(118px);
+    background-size: 101%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 25px 25px 0px 0px;
 }
 
 /*!! image styles*/
@@ -135,6 +121,11 @@ body {
     margin-left: 5rem;
     width: 149px;
     height: 72px;
+}
+
+.copyright-image {
+    width: 330px;
+    height: 25px;
 }
 
 /*!! text styles*/
@@ -148,15 +139,17 @@ body {
     top: 1000px; */
     color: #FFFFFF;
 }
+
 .white-title {
-    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
     line-height: 61px;
     color: #FFFFFF;
 }
-.under-digits-title{
+
+.under-digits-title {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
@@ -164,8 +157,9 @@ body {
     line-height: 37px;
     /* identical to box height */
     color: #FFFFFF;
-}   
-.digits-title{
+}
+
+.digits-title {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
@@ -174,6 +168,7 @@ body {
 
     color: #FFFFFF;
 }
+
 .anchor-text {
     font-family: 'Gilroy';
     font-style: normal;
@@ -181,9 +176,8 @@ body {
     font-size: 12px;
     line-height: 15px;
     /* identical to box height */
-    color: rgba(0, 0, 0, 0.5);
+    color: #000000;
     text-decoration: none;
-    
 }
 
 .small-white-text {
@@ -211,15 +205,16 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
 }
 
 .under-title-text {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 16px;
+
     color: #000000;
 }
 
@@ -256,6 +251,9 @@ body {
 }
 
 .industries-text {
+    /* padding-top: calc((330 - 100%) / 2) 
+    84px  calc((330 - 100%) / 2) 84px; */
+    margin-top: 62px;
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
@@ -286,9 +284,7 @@ body {
     height: 39px;
     border-radius: 95px;
     backdrop-filter: blur(41.5px);
-    border: 0px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.30), 0 10px 10px rgba(0,0,0,0.60);
-    
+    /* background:url('../images/write.svg') no-repeat; */
 
 }
 
@@ -299,4 +295,107 @@ body {
     /* Note: backdrop-filter has minimal browser support */
     height: 117px;
     border-radius: 22px
+}
+
+.industries-block {
+    margin-left: 2rem;
+    width: 330px;
+    height: 155px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(85px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.227);
+}
+
+.pretify-input {
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(59.7095px);
+    /* Note: backdrop-filter has minimal browser support */
+    color: white;
+    padding: 12px;
+
+    border-radius: 15.4542px;
+}
+
+.pretify-button {
+    width: 140px;
+    height: 40px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(59.6491px);
+    /* Note: backdrop-filter has minimal browser support */
+    color: white;
+    border-radius: 15.4386px;
+}
+
+.input-block {
+    /* width: 500px; */
+}
+
+.pretify-input::-webkit-input-placeholder {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.0351px;
+    line-height: 17px;
+
+    color: rgba(255, 255, 255, 0.2);
+}
+.pretify-input::-moz-placeholder {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.0351px;
+    line-height: 17px;
+
+    color: rgba(255, 255, 255, 0.2);
+
+}
+
+.pretify-input::-moz-placeholder {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.0351px;
+    line-height: 17px;
+
+    color: rgba(255, 255, 255, 0.2);
+
+}
+
+.pretify-input::-ms-input-placeholder {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.0351px;
+    line-height: 17px;
+
+    color: rgba(255, 255, 255, 0.2);
+
+}
+
+.pretify-input::placeholder {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.0351px;
+    line-height: 17px;
+
+    color: rgba(255, 255, 255, 0.2);
+    /* padding: 12px; */
+}
+
+.pretify-link {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+
 }
