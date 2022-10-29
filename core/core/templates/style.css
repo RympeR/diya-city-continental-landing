@@ -643,6 +643,12 @@ border-radius: 25px 25px 0px 0px;
         overflow-x: hidden;
         font-family: 'Gilroy-Bold', sans-serif;
     }
+    
+    body {
+        background-color: #000000;
+        overflow-x: hidden;
+        font-family: 'Gilroy-Bold', sans-serif;
+    }
 
 
     .mb-d-none{
@@ -691,5 +697,48 @@ border-radius: 25px 25px 0px 0px;
     .first-block{
         border-radius:0px;
         height:700px;
+    }
+    .second-block {
+        height: 165px;
+        width: 393px;
+    }
+    .white-title{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30.1491px;
+        line-height: 37px;
+        /* identical to box height */
+        color: #FFFFFF;
+    }
+    .white-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13.3996px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    .grey-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.3996px;
+        line-height: 16px;
+
+        color: rgba(255, 255, 255, 0.8);
+
+    }
+    .convenience-h3-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30.1491px;
+        line-height: 37px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+
     }
 }
