@@ -629,3 +629,67 @@ border-radius: 25px 25px 0px 0px;
         opacity: 1;
     }
 }
+
+/* !! media 450 styles*/
+@media only screen and (min-width:451px){
+    .mb-l-none{
+        display: none;
+    }
+}
+@media only screen and (max-width:450px){
+    
+    html {
+        background-color: #000000;
+        overflow-x: hidden;
+        font-family: 'Gilroy-Bold', sans-serif;
+    }
+
+
+    .mb-d-none{
+        display: none;
+    }
+    .under-title-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15.5358px;
+        line-height: 19px;
+
+        color: #000000;
+
+    }
+    .text-title-black {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27.2983px;
+        line-height: 33px;
+
+        color: #000000;
+    }
+    .write-btn{
+        width: 205px;
+        height: 49px;
+        left: 39px;
+        top: 582px;
+
+        background: linear-gradient(90deg, #030205 0%, #9C5FFE 89.58%);
+        backdrop-filter: blur(15.2198px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 96.3924px;
+    }
+    .write-btn-text {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #FFFFFF;
+    }
+    .first-block{
+        border-radius:0px;
+        height:700px;
+    }
+}
