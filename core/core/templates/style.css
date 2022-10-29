@@ -21,6 +21,10 @@ body {
     margin-left: 10rem !important;
 }
 
+/* .revert-margin-t {
+    margin-top: revert!important;
+} */
+
 /*!!block styles*/
 
 .first-block {
@@ -35,11 +39,6 @@ body {
     margin-right: 2px;
     outline: 0ch;
 }
-
-
-
-
-
 
 .second-block {
     height: 260px;
@@ -58,6 +57,13 @@ body {
     background-size: 100%;
 }
 
+.convenience-h3-text {
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    color:#FFFFFF;
+    
+}
 .convenience-h3 {
     margin-top: 133px;
     margin-bottom: 147px;
@@ -84,17 +90,26 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
+    margin-bottom: 189px;
     
+}
+
+.images-block-convenience {
+    top: -4%!important;
+    right: 69%!important;
 }
 
 
 
 .card  {
-    width: 300px;
     font-size: 24px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 330px;
+    height: 311px;
+    border-radius: 30px;
+    
 }
 
 
@@ -155,6 +170,7 @@ body {
     font-size: 50px;
     line-height: 61px;
     color: #FFFFFF;
+    
 }
 .under-digits-title{
     font-family: 'Gilroy';
@@ -289,3 +305,4 @@ body {
     height: 117px;
     border-radius: 22px
 }
+
