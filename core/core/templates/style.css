@@ -80,6 +80,7 @@ body {
     font-size: 50px;
     font-family: 'Gilroy-Bold', sans-serif;
     color:#FFFFFF;
+    margin-top: ;
     
 }
 .convenience-h3 {
@@ -170,6 +171,7 @@ body {
     height: 1212px;
     background-size: 100%;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 .fith-block {
