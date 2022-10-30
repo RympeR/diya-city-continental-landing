@@ -108,7 +108,7 @@ body {
 }
 
 .block-4{
-    background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/block-4-bg.svg');
+    background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/convience-bg.svg');
     height: 1212px;
     background-size: 100%;
     background-repeat: no-repeat;
