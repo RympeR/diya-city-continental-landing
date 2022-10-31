@@ -82,6 +82,10 @@ body {
     z-index: 3;
 }
 
+.navigation-block {
+    justify-content: space-around;
+}
+
 .button-between-ua-en {
     border: none;
     background: transparent;
@@ -112,6 +116,7 @@ body {
     height: 1212px;
     background-size: 100%;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 .fith-block {
@@ -398,8 +403,22 @@ border-radius: 25px 25px 0px 0px;
     /* Note: backdrop-filter has minimal browser support */
     color: white;
     border-radius: 15.4386px;
+    margin-top: -22px;
+    border: 1px solid  rgba(255, 255, 255, 0.15);;
+    background: #40305C;
 }
 
+#email {
+    border: 1px solid  rgba(255, 255, 255, 0.15);;
+    background: #40305C;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+#guide {
+    border: 1px solid  rgba(255, 255, 255, 0.15);;
+    background: #40305C;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
 .input-block {
     /* width: 500px; */
 }
