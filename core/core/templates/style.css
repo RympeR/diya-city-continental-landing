@@ -882,22 +882,24 @@ border-radius: 25px 25px 0px 0px;
         color: #FFFFFF;
     }
     .purple-block-mobile{
-        block-size: auto;
+        /* block-size: auto; */
         background: linear-gradient(0deg, rgba(46, 12, 63, 0.6), rgba(46, 12, 63, 0.6)), rgba(242, 88, 255, 0.15);
         border: 0.50276px solid rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(12.569px);
         /* Note: backdrop-filter has minimal browser support */
         border-radius: 11.0607px;
+        /* padding: 22px 10% 22px 10%; */
+
     }
     .purple-block-text{
+        padding: 0px;
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 600;
         font-size: 12.569px;
         line-height: 15px;
         /* identical to box height */
-
-        padding: 22px 20% 22px 20%;
+        margin-bottom: 0rem;
         color: #FFFFFF;
     }
     .tech-m{
@@ -905,6 +907,131 @@ border-radius: 25px 25px 0px 0px;
     }
     .row-tech-m{
         margin-left: -2rem;
+    }
+    .seventh-block{
+        height: 544px;
+        width: 100%;
+    }
+    .eigth-block {
+        background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.6) 0.01%, rgba(255, 255, 255, 0) 99.5%, rgba(255, 255, 255, 0.6) 99.5%), url('./images/footer-block-mobile-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .industries-block{
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(38.1212px);
+        /* Note: backdrop-filter has minimal browser support */
+        width: 132px;
+        height: 55px;
+        border-radius: 10px;
+    }
+    .industries-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11.2121px;
+        line-height: 14px;
+        /* identical to box height */
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 21px;
+    }
+    .under-digits-title{
+        text-align: center;
+    }
+    .six-block{
+        height: 537px;
+        width: 100%;
+        background:url('./images/bg-mobile-digits.svg')
+    }
+    .fith-block{
+        height: 558px;
+        background:url('./images/tecnologies-bg.svg')
+    }
+    .tech-m-block-1{
+        position: absolute;
+        width: 134.28px;
+        height: 57px;
+        left: 60px;
+        top: 3250.42px;
+    }
+    .tech-m-block-2{
+        position: absolute;
+        width: 128.85px;
+        height: 57.76px;
+        left: 213.15px;
+        top: 3248.42px;
+    }
+    .tech-m-block-3{
+        position: absolute;
+        width: 142.23px;
+        height: 57px;
+        left: 60px;
+        top: 3321px;
+    }
+    .tech-m-block-4{
+        position: absolute;
+        width: 121.23px;
+        height: 55.84px;
+        left: 222.77px;
+        top: 3315px;
+    }
+    .tech-m-block-5{
+        position: absolute;
+        width: 135.07px;
+        height: 57px;
+        left: 60px;
+        top: 3370.68px;
+    }
+    .tech-m-block-6{
+        position: absolute;
+        width: 127.46px;
+        height: 57px;
+        left: 216.54px;
+        top: 3385.68px;
+    }
+    .tech-m-block-7{
+        position: absolute;
+        width: 121.03px;
+        height: 57px;
+        left: 60px;
+        top: 3450px;
+    }
+    .tech-m-block-8{
+        position: absolute;
+        width: 141px;
+        height: 57px;
+        left: 205px;
+        top: 3448px;
+    }
+    .tech-m-block-9{
+        position: absolute;
+        width: 144px;
+        height: 57px;
+        left: 60px;
+        top: 3518.26px;
+    }
+    .tech-m-block-10{
+        position: absolute;
+        width: 119.33px;
+        height: 57px;
+        left: 229.67px;
+        top: 3518.26px;
 
     }
-}   
+    .tech-m-block-11{
+        position: absolute;
+        width: 154px;
+        height: 57px;
+        left: 60px;
+        top: 3593px;
+
+    }
+    .tech-m-block-12{
+        position: absolute;
+        width: 108.52px;
+        height: 57px;
+        left: 241.48px;
+        top: 3593.26px;
+    }
+}  
