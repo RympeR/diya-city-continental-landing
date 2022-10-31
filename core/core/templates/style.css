@@ -119,12 +119,7 @@ body {
     width: 100%;
 }
 
-.fith-block {
-    height: 600px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7);
-    border-radius: 25px 25px 0px 0px;
-}
+
 
 
 .six-block {
@@ -654,6 +649,12 @@ border-radius: 25px 25px 0px 0px;
     .mb-l-none{
         display: none;
     }
+    .fith-block {
+        height: 600px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7);
+        border-radius: 25px 25px 0px 0px;
+    }
 }
 @media only screen and (max-width:450px){
     
@@ -822,7 +823,9 @@ border-radius: 25px 25px 0px 0px;
     .block-4 {
         height: 616px;
         width: 100%;
-        background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0.01%, rgba(255, 255, 255, 0) 99.5%, rgba(255, 255, 255, 0.59) 99.5%), url('./images/block-4-mobile.svg');
+        margin-bottom: -26px;
+        box-sizing: content-box;
+        background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/block-4-mobile.svg');
     }
     .convenience-h3-text{
         font-family: 'Gilroy';
@@ -911,6 +914,7 @@ border-radius: 25px 25px 0px 0px;
     .seventh-block{
         height: 544px;
         width: 100%;
+        box-sizing: content-box;
     }
     .eigth-block {
         background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.6) 0.01%, rgba(255, 255, 255, 0) 99.5%, rgba(255, 255, 255, 0.6) 99.5%), url('./images/footer-block-mobile-bg.svg');
@@ -1033,5 +1037,8 @@ border-radius: 25px 25px 0px 0px;
         height: 57px;
         left: 241.48px;
         top: 3593.26px;
+    }
+    .convenience-h3 {
+        margin-bottom: 0px;
     }
 }  
