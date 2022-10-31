@@ -881,5 +881,30 @@ border-radius: 25px 25px 0px 0px;
         text-align: center;
         color: #FFFFFF;
     }
-    
-}
+    .purple-block-mobile{
+        block-size: auto;
+        background: linear-gradient(0deg, rgba(46, 12, 63, 0.6), rgba(46, 12, 63, 0.6)), rgba(242, 88, 255, 0.15);
+        border: 0.50276px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(12.569px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 11.0607px;
+    }
+    .purple-block-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12.569px;
+        line-height: 15px;
+        /* identical to box height */
+
+        padding: 22px 20% 22px 20%;
+        color: #FFFFFF;
+    }
+    .tech-m{
+        margin-top:4.5rem!important;
+    }
+    .row-tech-m{
+        margin-left: -2rem;
+
+    }
+}   
