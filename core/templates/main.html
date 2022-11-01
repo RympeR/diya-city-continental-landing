@@ -1,0 +1,1445 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" id="" class="">
+    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gilroy&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="application/xhtml+xml">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <div class="container-fluid first-block rounded-bottom">
+        <div class="row mb-5"></div>
+        <div class="row mt-3">
+            <div class="col-3 offset-1">
+                <img src="{% static 'images/Logo.svg' %}" class="header-logo" alt="logo">
+            </div>
+            <div class="col-4 d-flex navigation-block">
+                <a class='anchor-text text-dark mb-d-none' href="">
+                    {% if request.session.lang == 'eng' %}
+                    HOME
+                    {% else %}
+                    ГОЛОВНА
+                    {% endif %}
+                </a>
+                <p class='mb-d-none'>|</p>
+                <a class='opacity-03 anchor-text text-dark mb-d-none' href="#about">
+                    {% if request.session.lang == 'eng' %}
+                    ABOUT
+                    {% else %}
+                    ПРО ІС
+                    {% endif %}
+                </a>
+                <p class='mb-d-none'>|</p>
+                <a class=' opacity-03 anchor-text text-dark mb-d-none' href="#services">
+                    {% if request.session.lang == 'eng' %}
+                    SERVICES
+                    {% else %}
+                    СЕРВІСИ
+                    {% endif %}
+                </a>
+                <p class='mb-d-none'>|</p>
+                <a class=' opacity-03 anchor-text text-dark mb-d-none' href="#contact">
+                    {% if request.session.lang == 'eng' %}
+                    CONTACT
+                    {% else %}
+                    КОНТАКТИ
+                    {% endif %}
+
+                </a>
+            </div>
+            <div class="col-3 d-flex justify-content-end mb-d-none">
+                <button type="button" class="btn btn-outline-none mb-d-none" id="uk-lang">UA</button>
+                <button class="button-between-ua-en mb-d-none" disabled>|</button>
+                <button type="button" class="btn btn-outline-none mb-d-none" id="en-lang">EN</button>
+            </div>
+        </div>
+        <div class="row mt-5 mb-d-none">
+            <div class="col-5 offset-1">
+                <h1 class="text-title-black m-top-15r">
+                    {% if request.session.lang == 'eng' %}
+                    Innovative technologies
+                    {% else %}
+                    Інноваційні технології
+                    {% endif %}
+                    <br>
+                    {% if request.session.lang == 'eng' %}
+                    and software for
+                    {% else %}
+                    та софтвер для
+                    {% endif %}
+
+                    <span class="gradient-text">
+                        {% if request.session.lang == 'eng' %}
+                        business
+                        {% else %}
+                        бізнесу
+                        {% endif %}
+
+                    </span> </h1>
+                <p class="under-title-text">
+                    {% if request.session.lang == 'eng' %}
+                    Software opens up new possibilities, exploiting the advances of new technologies with<br> real ones,
+                    simultaneously expanding the possibilities<br>
+                    like no other company.
+                    {% else %}
+                    Софт відкриває нові можливості, робить переваги нових технологій реальними, <br>
+                    одночасно розширюючи можливості користувачів та компанії. Так організації <br>
+                    покращують ефективність та рентабельність.
+                    {% endif %}
+
+                </p>
+                <a class='write-btn btn anchor-text' style="color:white; padding-top:10px" href="#contact">
+                    {% if request.session.lang == 'eng' %}
+                    Write
+                    {% else %}
+                    Написати
+                    {% endif %}
+
+                </a>
+            </div>
+            <div class="col-5 mb-d-none">
+                <img src="{% static 'images/BigPurple.svg' %}" class="big-purple" alt="big-purple">
+                <img src="{% static 'images/first-block-arrows.svg' %}" class="arrows" alt="big-purple">
+
+            </div>
+        </div>
+        <div class="row mt-5 mb-l-none">
+            <div class="col-sm-8 offset-1">
+                <h1 class="text-title-black mt-5">{% if request.session.lang == 'eng' %}
+                    Innovative technologies
+                    {% else %}
+                    Інноваційні технології
+                    {% endif %}
+                    <br>
+                    {% if request.session.lang == 'eng' %}
+                    and software for
+                    {% else %}
+                    та софтвер для
+                    {% endif %}
+
+                    <span class="gradient-text">
+                        {% if request.session.lang == 'eng' %}
+                        business
+                        {% else %}
+                        бізнесу
+                        {% endif %}
+
+                    </span></h1>
+                <p class="under-title-text">
+                    {% if request.session.lang == 'eng' %}
+                    Software opens up new possibilities,<br>
+                    exploiting the advances of new<br>
+                    technologies with real ones,
+                    simultaneously<br> expanding the possibilities<br>
+                    like no other company.
+                    {% else %}
+                    Софт відкриває нові можливості, робить <br> переваги нових технологій реальними, <br>
+                    одночасно розширюючи можливості <br> користувачів та компанії. Так організації <br>
+                    покращують ефективність та <br> рентабельність.
+                    {% endif %}
+
+                </p>
+                <button class="write-btn m-top-10r">
+                    <p class="write-btn-text">
+                        {% if request.session.lang == 'eng' %}
+                        Write
+                        {% else %}
+                        Написати
+                        {% endif %}
+                    </p>
+                </button>
+            </div>
+            <div class="col-5 mb-l-none">
+                <img src="{% static 'images/BigPurple.svg' %}" class="big-purple" alt="big-purple">
+                <img src="{% static 'images/first-block-arrows.svg' %}" class="arrows" alt="big-purple">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid second-block rounded-bottom">
+        <div class="row">
+            <div class="col-12  mt-5 d-flex justify-content-center align-items-center">
+                <h2 class="white-title white-title-mobile mt-5">
+                    {% if request.session.lang == 'eng' %}
+                    Resident
+                    {% else %}
+                    Резидент
+                    {% endif %}
+
+                </h2>
+                <img class='diya-image mt-5' src="{% static 'images/diya.svg' %}" alt="big-purple">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid third-block rounded mb-d-none" id="about">
+        <div class="row mt-5">
+            <div class="col-11 offset-1 mt-5">
+                <h2 class="white-title" style="margin-top: revert!important;">
+                    {% if request.session.lang == 'eng' %}
+                    About iC
+                    {% else %}
+                    Про iC
+                    {% endif %}
+
+                </h2>
+            </div>
+            <div class="col-11 offset-1">
+                <p class="white-text" style="margin-top: revert!important;">
+                    {% if request.session.lang == 'eng' %}
+                    itContinental is a reliable partner in the field of innovative technologies.
+                    The company's product portfolio <br> includes the latest solutions and software
+                    from global manufacturers, the vast majority of which come from <br> the countries
+                    of the European Union and the United States of America, as well as own developments.
+                    {% else %}
+                    itContinental - надійний партнер у сфері інноваційних технологій. Продуктовий портфель
+                    компанії<br> включає новітні рішення та програмне забезпечення світових виробників,
+                    переважна більшість яких<br> походять з країн Європейського Союзу та
+                    Сполучених Штатів Америки, також включає власні розробки.
+                    {% endif %}
+
+                </p>
+            </div>
+            <div class="col-11  offset-1">
+                <p class="grey-text" style="margin-top: revert!important;">
+                    {% if request.session.lang == 'eng' %}
+                    The main areas of activity are the implementation of software for IT services,
+                    technical support of critical <br>business systems and infrastructure, and
+                    other specialized services. Clients are enterprises of key sectors of <br>
+                    the economy, such as the financial sector, energy, metallurgy, retail
+                    and others.
+                    {% else %}
+                    Основними напрямками діяльності є впровадження програмного забезпечення
+                    для ІТ сервісів, технічна<br> підтримка критичних бізнес систем та інфраструктури,
+                    інші профільні послуги. Клієнтами являються<br> підприємства ключових галузей
+                    економіки, таких як фінансовий сектор, енергетика, металургія, рітейл та інші.
+                    {% endif %}
+
+                </p>
+            </div>
+            <div class="col-11  offset-1">
+                <p class="grey-text" style="margin-top: revert!important;">
+                    {% if request.session.lang == 'eng' %}
+                    The company, together with partners, provides organizations with access
+                    to the latest global developments <br> and technologies, accelerates the
+                    digital transformation of enterprises.
+                    {% else %}
+                    Компанія разом з партнерами забезпечують доступ організацій
+                    до найновіших світових розробок та <br>технологій, прискорюють
+                    цифрову трансформацію підприємств.
+                    {% endif %}
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid third-block rounded mb-l-none" id="about">
+        <div class="row">
+            <div class="col-11 offset-1">
+                <h2 class="white-title" style="margin-top: revert!important;">
+                    {% if request.session.lang == 'eng' %}
+                    About iC
+                    {% else %}
+                    Про iC
+                    {% endif %}
+                </h2>
+            </div>
+            <div class="col-11 offset-1">
+                <p class="white-text" style="margin-top: revert!important;">
+                    {% if request.session.lang == 'eng' %}
+                    itContinental is a reliable partner in the field of<br>innovative technologies.
+                    The company's product <br>portfolio includes the latest solutions and software<br>
+                    from global manufacturers, the vast majority of which<br> come from the countries
+                    of the European Union and<br> the United States of America, as well as own<br> developments.
+                    {% else %}
+                    itContinental - надійний партнер у сфері інноваційних<br> технологій. Продуктовий портфель
+                    компанії включає<br> новітні рішення та програмне забезпечення світових <br>виробників,
+                    переважна більшість яких походять з країн<br> Європейського Союзу та
+                    Сполучених Штатів Америки,<br> також включає власні розробки.
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-11  offset-1">
+                <p class="grey-text" style="margin-top: revert!important;">
+                    {% if request.session.lang == 'eng' %}
+                    The main areas of activity are the implementation of<br>
+                    software for IT services, technical support of critical <br>
+                    business systems and infrastructure, and
+                    other<br> specialized services. Clients are enterprises of key<br> sectors of
+                    the economy, such as the financial sector, <br> energy, metallurgy, retail
+                    and others.
+                    {% else %}
+                    Основними напрямками діяльності є впровадження<br> програмного забезпечення
+                    для ІТ сервісів, технічна<br> підтримка критичних бізнес систем та інфраструктури, <br>
+                    інші профільні послуги. Клієнтами являються<br> підприємства ключових галузей
+                    економіки, таких як<br> фінансовий сектор, енергетика, металургія, рітейл та <br>інші.
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-11  offset-1">
+                <p class="grey-text" style="margin-top: revert!important;">
+                    {% if request.session.lang == 'eng' %}
+                    The company, together with partners, provides<br> organizations with access
+                    to the latest global<br> developments and technologies, accelerates the<br>
+                    digital transformation of enterprises.
+                    {% else %}
+                    Компанія разом з партнерами забезпечують доступ<br> організацій
+                    до найновіших світових розробок та <br>технологій, прискорюють
+                    цифрову трансформацію<br> підприємств.
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid block-4 rounded mb-d-none" id="services">
+
+        <div class="convenience-h3">
+            <h3 class="convenience-h3-text">
+                {% if request.session.lang == 'eng' %}
+                Convenience
+                {% else %}
+                Переваги
+                {% endif %}
+
+            </h3>
+        </div>
+
+        <div class="cards-block-convenience-1 mt-5 row">
+            <div class="card">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-first-img.svg' %}" alt="Icon">
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    The best IT solutions and technologies
+                    {% else %}
+                    Найкращі ІТ рішення та технології
+                    {% endif %}
+                </h3>
+                <p class="p-card-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    iC chooses the best global IT solutions for you, constantly following global trends in innovative
+                    technologies.
+                    {% else %}
+                    в іС обирають для вас кращі світові ІТ рішення, постійно слідкуючи за глобальними трендами в
+                    інноваційних технологіях.
+                    {% endif %}
+                </p>
+            </div>
+
+            <div class="card card">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-img2.svg' %}" alt="Icon">
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    Professional level of specialists
+                    {% else %}
+                    Професійний рівень спеціалістів
+                    {% endif %}
+                </h3>
+                <p class="p-card-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    stay in your comfort zone during testing and implementation, their team will do their part
+                    perfectly.
+                    {% else %}
+                    перебувайте в зоні комфорту під час тестування та впровадження,
+                    команда виконає свою частину роботи на відмінно.
+                    {% endif %}
+
+                </p>
+            </div>
+
+            <div class="card">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-third-img.svg' %}" alt="Icon">
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    Effective technical support
+                    {% else %}
+                    Ефективна технічна підтримка
+                    {% endif %}
+
+                </h3>
+                <p class="p-card-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    be sure that in the event of an appeal, the company's specialists will help solve the case as
+                    quickly
+                    and as best as possible.
+                    {% else %}
+                    будьте впевнені, що у разі звернення, спеціалісти компанії допоможуть вирішити кейс як найшвидше,
+                    так і найкраще.
+                    {% endif %}
+
+                </p>
+            </div>
+            <!-- cards-block-convenience-2 -->
+            
+        </div>
+        <div class="cards-block-convenience-2 mt-4">
+            <div class="card">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-four-img.svg' %}" alt="Icon">
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    Сonvenience of communication
+                    {% else %}
+                    Просте та оперативне спілкування
+                    {% endif %}
+                </h3>
+                <p class="p-card-convenience2">
+                    {% if request.session.lang == 'eng' %}
+                    they are online and always welcome your messages through all convenient and available channels
+                    of
+                    communication with them and the vendor.
+                    {% else %}
+                    вони онлайн та завжди раді вашим повідомленням по всім зручним та доступним каналам зв’язку з
+                    ними та вендором.
+                    {% endif %}
+                </p>
+            </div>
+
+            <div class="card">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-five-img.svg' %}" alt="Icon">
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    More benefits than in the contract
+                    {% else %}
+                    Більше вигоди ніж передбачено контрактом
+                    {% endif %}
+                </h3>
+                <p class="p-card-convenience2">
+                    {% if request.session.lang == 'eng' %}
+                    the company always has additional bonuses, free services and much more in store for its
+                    customers.
+                    {% else %}
+                    для своїх клієнтів компанія завжди має в запасі додаткові бонуси, безоплатні послуги та багато
+                    іншого.
+                    {% endif %}
+
+                </p>
+            </div>
+
+            <div class="card">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-img-six.svg' %}" alt="Icon">
+                <h3 class="h3-convenience-last-card">
+                    {% if request.session.lang == 'eng' %}
+                    The best cooperation experience
+                    {% else %}
+                    Найкращий досвід співпраці
+                    {% endif %}
+
+                </h3>
+                <p class="p-card-convenience2">
+                    {% if request.session.lang == 'eng' %}
+                    the main goal of iC is the client's satisfaction with cooperation and benefit from the IT
+                    solution.
+                    They achieve it in every project.
+                    {% else %}
+                    головна мета іС - це задоволення клієнта від співпраці та користь від ІТ рішення. Вони досягають
+                    її в кожному проекті.
+
+                    {% endif %}
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid block-4 rounded mb-l-none" id="services">
+
+        <div class="convenience-h3">
+            <h3 class="convenience-h3-text">{% if request.session.lang == 'eng' %}
+                Convenience
+                {% else %}
+                Переваги
+                {% endif %}</h3>
+        </div>
+
+        <div class="cards-block-convenience-1 mt-1 row d-flex">
+            <div class="card col-sm-6">
+                <img class="position-absolute translate-middle images-block-convenience justify-content-between"
+                    src="{% static 'images/convenience-first-img.svg' %}" alt="Icon">
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    The best IT solutions and technologies
+                    {% else %}
+                    Найкращі ІТ рішення та технології
+                    {% endif %}
+                </h3>
+                <p class="p-card-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    iC chooses the best global IT solutions for you, constantly following global trends in innovative
+                    technologies.
+                    {% else %}
+                    в іС обирають для вас кращі світові ІТ рішення, постійно слідкуючи за глобальними трендами в
+                    інноваційних технологіях.
+                    {% endif %}
+                </p>
+            </div>
+
+            <div class="card col-sm-6">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-img2.svg' %}" alt="Icon">
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    Professional level of specialists
+                    {% else %}
+                    Професійний рівень спеціалістів
+                    {% endif %}
+                </h3>
+                <p class="p-card-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    stay in your comfort zone during testing and implementation, their team will do their part
+                    perfectly.
+                    {% else %}
+                    перебувайте в зоні комфорту під час тестування та впровадження,
+                    команда виконає свою частину роботи на відмінно.
+                    {% endif %}
+
+                </p>
+            </div>
+        </div>
+
+        <div class="cards-block-convenience-1 mt-3 row d-flex">
+
+            <div class="card">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-third-img.svg' %}" alt="Icon">
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    Effective technical support
+                    {% else %}
+                    Ефективна технічна підтримка
+                    {% endif %}
+    
+                </h3>
+                <p class="p-card-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    be sure that in the event of an appeal, the company's specialists will help solve the case as
+                    quickly
+                    and as best as possible.
+                    {% else %}
+                    будьте впевнені, що у разі звернення, спеціалісти компанії допоможуть вирішити кейс як найшвидше, так і
+                    найкраще.
+                    {% endif %}
+    
+                </p>
+            </div>
+            <!-- cards-block-convenience-2 -->
+            <div class="card">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-four-img.svg' %}" alt="Icon">
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    Сonvenience of communication
+                    {% else %}
+                    Просте та оперативне спілкування
+                    {% endif %}
+                </h3>
+                <p class="p-card-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    they are online and always welcome your messages through all convenient and available channels
+                    of
+                    communication with them and the vendor.
+                    {% else %}
+                    вони онлайн та завжди раді вашим повідомленням по всім зручним та доступним каналам зв’язку з ними та
+                    вендором.
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        <div class="cards-block-convenience-1 mt-3 row d-flex">
+    
+            <div class="card">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-five-img.svg' %}" alt="Icon">
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    More benefits than in the contract
+                    {% else %}
+                    Більше вигоди ніж передбачено контрактом
+                    {% endif %}
+                </h3>
+                <p class="p-card-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    the company always has additional bonuses, free services and much more in store for its
+                    customers.
+                    {% else %}
+                    для своїх клієнтів компанія завжди має в запасі додаткові бонуси, безоплатні послуги та багато
+                    іншого.
+                    {% endif %}
+    
+                </p>
+            </div>
+    
+            <div class="card">
+                <img class="position-absolute translate-middle images-block-convenience"
+                    src="{% static 'images/convenience-img-six.svg' %}" alt="Icon">
+                    <h3 class="h3-convenience">
+                        {% if request.session.lang == 'eng' %}
+                        The best cooperation experience
+                        {% else %}
+                        Найкращий досвід співпраці
+                        {% endif %}
+    
+                    </h3>
+                    <p class="p-card-convenience">
+                        {% if request.session.lang == 'eng' %}
+                        the main goal of iC is the client's satisfaction with cooperation and benefit from the IT
+                        solution.
+                        They achieve it in every project.
+                        {% else %}
+                        головна мета іС - це задоволення клієнта від співпраці та користь від ІТ рішення. Вони досягають
+                        її в кожному проекті.
+    
+                        {% endif %}
+    
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid fith-block mb-d-none">
+        <div class="row">
+            <div class="col-11 offset-1 ">
+                <h1 class="text-title-black mt-5 " style="top: 124rem;">
+                    {% if request.session.lang == 'eng' %}
+                    Technologies
+                    {% else %}
+                    Технології
+                    {% endif %}
+                </h1>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-10 offset-1 d-flex justify-content-around">
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Virtualization
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Dev-Ops
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Cloud Migrations
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Agri Tech
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-10 offset-1 d-flex justify-content-around">
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Fin Tech
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Deep Tech
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        App Optimize
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Cloud Platform
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-10 offset-1 d-flex justify-content-around">
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Automation Software
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Internet Things
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Data Ops
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Ai
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if request.session.lang == 'eng' %}
+    <div class="container-fluid fith-block mb-l-none">
+        <!-- <div class="row">
+            <div class="col-11 offset-1 ">
+                <h1 class="text-title-black mt-5 " style="top: 124rem;">Technologies</h1>
+            </div>
+        </div>
+        <div class="d-flex tech-m row-tech-m" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Virtualization
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Dev-Ops
+                    </p>
+                </div>
+        </div>
+        <div class="d-flex mt-3" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Cloud Migrations
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Agri Tech
+                    </p>
+                </div>
+        </div>
+        <div class="d-flex mt-3" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Fin Tech
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Deep Tech
+                    </p>
+                </div>
+        </div>
+        <div class="d-flex mt-3" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        App Optimize
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Cloud Platform
+                    </p>
+                </div>
+        </div>
+        <div class="d-flex mt-3" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Automation Software
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Internet Things
+                    </p>
+                </div>
+        </div>
+        <div class="d-flex mt-3" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Data Ops
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Ai
+                    </p>
+                </div>
+        </div> -->
+    </div>
+    {% else %}
+    <div class="container-fluid fith-block-ukr mb-l-none">
+        <!-- <div class="row">
+            <div class="col-11 offset-1 ">
+                <h1 class="text-title-black mt-5 " style="top: 124rem;">Technologies</h1>
+            </div>
+        </div>
+        <div class="d-flex tech-m row-tech-m" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Virtualization
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Dev-Ops
+                    </p>
+                </div>
+        </div>
+        <div class="d-flex mt-3" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Cloud Migrations
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Agri Tech
+                    </p>
+                </div>
+        </div>
+        <div class="d-flex mt-3" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Fin Tech
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Deep Tech
+                    </p>
+                </div>
+        </div>
+        <div class="d-flex mt-3" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        App Optimize
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Cloud Platform
+                    </p>
+                </div>
+        </div>
+        <div class="d-flex mt-3" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Automation Software
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Internet Things
+                    </p>
+                </div>
+        </div>
+        <div class="d-flex mt-3" 
+            style="justify-content: space-evenly;">
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Data Ops
+                    </p>
+                </div>
+                <div class="purple-block-mobile">
+                    <p class="white-text purple-block-text">
+                        Ai
+                    </p>
+                </div>
+        </div> -->
+    </div>
+    {% endif %}
+
+
+    <div class="container-fluid six-block mb-d-none">
+        <div class="row">
+            <div class="col-12 m-top-8r d-flex justify-content-around align-items-center">
+                <div class="custom-digit-block flex-column d-flex justify-content-center">
+                    <h2 class="digits-title text-center">100+</h2>
+                    <h4 class="under-digits-title text-center">
+                        {% if request.session.lang == 'eng' %}
+                        Experience
+                        {% else %}
+                        Досвідченість
+                        {% endif %}
+
+                    </h4>
+                    <p class="small-white-text text-center">
+                        {% if request.session.lang == 'eng' %}
+                        The team in this field has more than 100<br> projects under its belt
+                        {% else %}
+                        У команди в цій сфері, понад 100<br> проектів за плечима
+                        {% endif %}
+
+                    </p>
+                </div>
+                <div class="custom-digit-block text-center">
+                    <h2 class="digits-title">11<sup class="sup-text">10</sup></h2>
+                    <h4 class="under-digits-title ">
+                        {% if request.session.lang == 'eng' %}
+                        Сonsistency
+                        {% else %}
+                        Злагодженість
+                        {% endif %}
+                    </h4>
+                    <p class="small-white-text">
+                        {% if request.session.lang == 'eng' %}
+                        Everything is organized<br> and works like clockwork
+                        {% else %}
+                        Все організовано і працює<br> як годинник
+                        {% endif %}
+    
+                    </p>
+                </div>
+                <div class="custom-digit-block text-center">
+                    <h2 class="digits-title">201%</h2>
+                    <h4 class="under-digits-title ">
+                        {% if request.session.lang == 'eng' %}
+                            Scrupulousness
+                        {% else %}
+                            Скурпульозність
+                        {% endif %}
+                        </h4>
+                        <p class="small-white-text">
+                        {% if request.session.lang == 'eng' %}
+                            They will do everything for the<br>success of the joint project
+                        {% else %}
+                            Будуть робити все задля успіху<br>спільного проекту
+                        {% endif %}
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid six-block mb-l-none">
+        <div class="row">
+            <div class="col-12 mt-4 d-flex flex-column justify-content-around align-items-center">
+                <div class="custom-digit-block flex-column d-flex justify-content-center">
+                    <h2 class="digits-title text-center">100+</h2>
+                    <h4 class="under-digits-title text-center">
+                        {% if request.session.lang == 'eng' %}
+                        Experience
+                        {% else %}
+                        Досвідченість
+                        {% endif %}
+
+                    </h4>
+                    <p class="small-white-text text-center">
+                        {% if request.session.lang == 'eng' %}
+                        The team in this field has more than 100<br> projects under its belt
+                        {% else %}
+                        У команди в цій сфері, понад 100<br> проектів за плечима
+                        {% endif %}
+
+                    </p>
+                </div>
+                <div class="custom-digit-block text-center mt-4">
+                    <h2 class="digits-title">11<sup class="sup-text">10</sup></h2>
+                    <h4 class="under-digits-title ">
+                        {% if request.session.lang == 'eng' %}
+                        Сonsistency
+                        {% else %}
+                        Злагодженість
+                        {% endif %}
+                    </h4>
+                    <p class="small-white-text">
+                        {% if request.session.lang == 'eng' %}
+                        Everything is organized<br> and works like clockwork
+                        {% else %}
+                        Все організовано і працює<br> як годинник
+                        {% endif %}
+    
+                    </p>
+                </div>
+                <div class="custom-digit-block text-center mt-4">
+                    <h2 class="digits-title">201%</h2>
+                    <h4 class="under-digits-title ">
+                    {% if request.session.lang == 'eng' %}
+                        Scrupulousness
+                    {% else %}
+                        Скурпульозність
+                    {% endif %}
+                    </h4>
+                    <p class="small-white-text">
+                    {% if request.session.lang == 'eng' %}
+                        They will do everything for the<br>success of the joint project
+                    {% else %}
+                        Будуть робити все задля успіху<br>спільного проекту
+                    {% endif %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid seventh-block mb-d-none">
+        <div class="row">
+            <div class="col-10 offset-1 m-left-10r">
+                <h2 class="white-title mt-5">
+                    {% if request.session.lang == 'eng' %}
+                    Solutions
+                    {% else %}
+                    Рішення
+                    {% endif %}
+                </h2>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-10 offset-1 d-flex justify-content-around">
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Virtualization
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Dev-Ops
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Cloud Migrations
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Agri Tech
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-10 offset-1 d-flex justify-content-around">
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Fin Tech
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Deep Tech
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        App Optimize
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Cloud Platform
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-10 offset-1 d-flex justify-content-around">
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Automation Software
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Internet Things
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Data Ops
+                    </p>
+                </div>
+                <div class="purple-block">
+                    <p class="white-text purple-block-text">
+                        Ai
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid seventh-block mb-l-none">
+        <div class="row">
+            <div class="col-11 offset-1 ">
+                <h1 class="white-title  mt-5 " style="top: 194rem;">
+                    {% if request.session.lang == 'eng' %}
+                    Solutions
+                    {% else %}
+                    Рішення
+                    {% endif %}
+                </h1>
+            </div>
+        </div>
+        <div class="d-flex tech-m row-tech-m" style="justify-content: space-evenly;">
+            <div class="purple-block-mobile tech-m-block-1">
+                <p class="white-text purple-block-text paragraph-1">
+                    Data Migration
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-2">
+                <p class="white-text purple-block-text paragraph-2">
+                    Data Masking
+                </p>
+            </div>
+        </div>
+        <div class="d-flex mt-3" style="justify-content: space-evenly;">
+            <div class="purple-block-mobile tech-m-block-3">
+                <p class="white-text purple-block-text paragraph-3">
+                    Data Governance
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-4">
+                <p class="white-text purple-block-text paragraph-4">
+                    Data Fabric
+                </p>
+            </div>
+        </div>
+        <div class="d-flex mt-3" style="justify-content: space-evenly;">
+            <div class="purple-block-mobile tech-m-block-5">
+                <p class="white-text purple-block-text paragraph-5">
+                    Data Integration
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-6">
+                <p class="white-text purple-block-text paragraph-6">
+                    DB Operations
+                </p>
+            </div>
+        </div>
+        <div class="d-flex mt-3" style="justify-content: space-evenly;">
+            <div class="purple-block-mobile tech-m-block-7">
+                <p class="white-text purple-block-text paragraph-7">
+                    Big Data
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-8">
+                <p class="white-text purple-block-text paragraph-8">
+                    Data Catalog
+                </p>
+            </div>
+        </div>
+        <div class="d-flex mt-3" style="justify-content: space-evenly;">
+            <div class="purple-block-mobile tech-m-block-9">
+                <p class="white-text purple-block-text paragraph-9">
+                    Metadata & MDM
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-10">
+                <p class="white-text purple-block-text paragraph-10">
+                    BI, Analytics
+                </p>
+            </div>
+        </div>
+        <div class="d-flex mt-3" style="justify-content: space-evenly;">
+            <div class="purple-block-mobile tech-m-block-11">
+                <p class="white-text purple-block-text paragraph-11">
+                    Data Transformation
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-12">
+                <p class="white-text purple-block-text paragraph-12">
+                    Test Data
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid eigth-block mb-d-none" id="contact">
+        <h1 class="white-title m-top-15r pd-top-7r pd-bot-4r d-flex justify-content-center">
+            {% if request.session.lang == 'eng' %}
+            Industries
+            {% else %}
+            Індустрії
+            {% endif %}
+        </h1>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-4 industries-block">
+                <p class="industries-text">
+                    FINANCIAL
+                </p>
+            </div>
+            <div class="col-4 industries-block">
+                <p class="industries-text">
+                    HEALTHCARE
+                </p>
+            </div>
+            <div class="col-4 industries-block">
+                <p class="industries-text">
+                    TECHNOLOGY
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-4 industries-block">
+                <p class="industries-text">
+                    RETAIL
+                </p>
+            </div>
+            <div class="col-4 industries-block">
+                <p class="industries-text">
+                    TELECOM
+                </p>
+            </div>
+            <div class="col-4 industries-block">
+                <p class="industries-text">
+                    MANUFACTURING
+                </p>
+            </div>
+        </div>
+        <div class="external-blur  m-top-10r  pd-top-10r">
+
+            <div class="row">
+                <div class="col-2 offset-8  d-flex justify-content-center">
+                    <h4 class="under-digits-title">
+                        {% if request.session.lang == 'eng' %}
+                        Write
+                    {% else %}
+                        Напишіть
+                    {% endif %}
+                    </h4>
+                </div>
+            </div>
+            <div class="row d-flex justify-space-around m-bot-10r ">
+                <div class="col-6  justify-content-center d-flex">
+                    <img class="" src="{% static 'images/footer-big-logo.svg' %}" width="473" height="190" alt="">
+                </div>
+                <div class="col-4 offset-1">
+                    <div class="container d-flex flex-column input-block">
+
+                        <input type="email" size="38" class="mb-3 pretify-input" placeholder="{% if request.session.lang == 'eng' %}Email{% else %}Електронна пошта{% endif %}" id="email">
+                        <textarea rows="3" cols="41" class="pretify-input" placeholder="{% if request.session.lang == 'eng' %}Guide text{% else %}Супровідний текст{% endif %}"
+                            id="guide"></textarea>
+                        <div class="row  justify-content-center d-flex">
+                            <button id="form-handler" type="submit" class="pretify-button">
+                                {% if request.session.lang == 'eng' %}
+                                Send
+                                {% else %}
+                                Надіслати
+                                {% endif %}
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row d-flex ">
+                <div class="col-3 offset-2" style="margin-top: -3px;">
+                    <img class="copyright-image" src="{% static 'images/copyright.svg' %}" alt="">
+                </div>
+                <div class="col-1 d-flex" style="margin-top: 2px;">
+                    <img class="copyright-image" src="{% static 'images/mdi_email.svg' %}" alt="">
+                    <a href="mailto:info@itcontinental.pro" class="small-text pretify-link m-left-1r"
+                        style="margin-top: 5px;">
+                        info@itcontinental.pro
+                    </a>
+                </div>
+                <div class="col-5 m-left-2r  d-flex">
+                    <img class="m-left-10r" src="{% static 'images/ci_location.svg' %}" alt="">
+                    <a href="Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159"
+                        class="small-text pretify-link  m-left-1r" style="margin-top: 5px;">
+                        {% if request.session.lang == 'eng' %}
+                        Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159
+                        {% else %}
+                        Україна м. Київ, вулиця Михайла Ломоносова, 73а, 03189 офіс 159
+                        {% endif %}
+
+                    </a>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row d-flex pd-top-2r"></div>
+        </div>
+
+    </div>
+    <div class="container-fluid eigth-block mb-l-none" id="contact">
+        <h1 class="white-title pd-bot-4r d-flex justify-content-center" style="padding-top: 4rem;">
+            {% if request.session.lang == 'eng' %}
+            Industries
+            {% else %}
+            Індустрії
+            {% endif %}
+
+        </h1>
+        <div class="row mt-2 justify-content-center">
+            <div class="col-4 offset-2 industries-block">
+                <p class="industries-text">
+                    FINANCIAL
+                </p>
+            </div>
+            <div class="col-4 industries-block">
+                <p class="industries-text">
+                    HEALTHCARE
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-6 industries-block">
+                <p class="industries-text">
+                    TECHNOLOGY
+                </p>
+            </div>
+            <div class="col-6 industries-block">
+                <p class="industries-text">
+                    RETAIL
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-6 industries-block">
+                <p class="industries-text">
+                    TELECOM
+                </p>
+            </div>
+            <div class="col-6 industries-block">
+                <p class="industries-text">
+                    MANUFACTURING
+                </p>
+            </div>
+        </div>
+        <div class="external-blur" style="margin-top: 3rem; padding-top: 5rem;">
+
+            <div class=" justify-content-center d-flex">
+                <img class="" src="{% static 'images/footer-big-logo.svg' %}" width="217" height="50" alt="">
+            </div>
+            <div class="row mt-5 mb-3">
+                <div class="d-flex justify-content-center">
+                    <h4 class="under-digits-title align-center">
+                    {% if request.session.lang == 'eng' %}
+                        Write
+                    {% else %}
+                        Напишіть
+                    {% endif %}
+                    </h4>
+                </div>
+            </div>
+            <div class="row d-flex justify-space-around">
+                <div class="col-12 ">
+                    <div class="container d-flex flex-column input-block">
+
+                        <input type="email" size="38" class="mb-3 pretify-input" placeholder="{% if request.session.lang == 'eng' %}Email{% else %}Електронна пошта{% endif %}" id="email">
+                        <textarea rows="3" cols="41" class="pretify-input" placeholder="{% if request.session.lang == 'eng' %}Guide text{% else %}Супровідний текст{% endif %}"
+                            id="guide"></textarea>
+                        <div class="row  justify-content-center d-flex">
+                            <button id="form-handler" type="submit" class="pretify-button">
+                                {% if request.session.lang == 'eng' %}
+                                Send
+                                {% else %}
+                                Надіслати
+                                {% endif %}
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row d-flex flex-column justify-center">
+                <div class="col-6 offset-3 d-flex" style="margin-top: 1em;">
+                    <img class="copyright-image" src="{% static 'images/mdi_email.svg' %}" alt="">
+                    <a href="mailto:info@itcontinental.pro" class="small-text pretify-link m-left-1r"
+                        style="margin-top: 5px;">
+                        info@itcontinental.pro
+                    </a>
+                </div>
+            </div>
+            <div class="row d-flex flex-column justify-center">
+                <div class="col-11 offset-1 d-flex mt-3">
+                    <img class="" src="{% static 'images/ci_location.svg' %}" alt="">
+                    <a href="Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159"
+                        class="small-text pretify-link  m-left-1r" style="margin-top: 5px;font-size:10px">
+                        {% if request.session.lang == 'eng' %}
+                        Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159
+                        {% else %}
+                        Україна м. Київ, вулиця Михайла Ломоносова, 73а, 03189 офіс 159
+                        {% endif %}
+
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 offset-1" style="margin-top: 2em; padding-bottom:3em">
+                <img class="copyright-image" src="{% static 'images/copyright.svg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $("#form-handler").click(function(){
+        alert('clicker')
+        let email = document.getElementById('email').value;
+        let text = document.getElementById('guide').value;
+        $.ajax({
+            url: "{% url 'process_form' %}",
+            type: "post",
+            data: {
+                email:email,
+                text:text
+            },
+            success: function (result) {
+                console.log(result, "Success");
+                
+            },
+            error: function (result) {
+                console.log(result, "location is bad");
+            },
+        });
+        document.getElementById("email").value = "";
+        document.getElementById("guide").value = "";
+    })
+
+    function clickNav() {
+        $('.animated-icon2').classList.toggle('open');
+    }
+    $("#uk-lang").click(function () {
+        $.ajax({
+            url: "{% url 'uk' %}",
+            type: "get",
+            success: function (result) {
+                window.location.href ='/'
+                console.log(result);
+            },
+            error: function (result) {
+                console.log(result, "location is bad");
+            },
+        });
+    });
+    $("#en-lang").click(function () {
+        $.ajax({
+            
+            url: "{% url 'en' %}",
+            type: "get",
+            success: function (result) {
+                console.log(result);
+                window.location.href ='/'
+            },
+            error: function (result) {
+                console.log(result, "location is bad");
+            },
+        });
+    });
+</script>
+
+</html>

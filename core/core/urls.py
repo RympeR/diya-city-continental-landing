@@ -7,8 +7,7 @@ from core import settings
 
 urlpatterns = [
     path('api/admin/', admin.site.urls),
-    path('api/api/', include('rest_framework.urls')),
-    path('api/landing/', include('landing.urls')),
+    path('', include('landing.urls')),
     # path('', include('front.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
