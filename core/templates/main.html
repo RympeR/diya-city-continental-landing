@@ -23,9 +23,9 @@
         <div class="row mb-5"></div>
         <div class="row mt-3">
             <div class="col-3 offset-1">
-                <img src="{% static 'images/Logo.svg' %}" class="header-logo" alt="logo">
+                <img src="{% static 'images/Logo.svg' %}" class="header-logo mt--2" alt="logo">
             </div>
-            <div class="col-4 d-flex navigation-block">
+            <div class="col-4 d-flex navigation-block  mb-d-none" style="margin-top: 2rem;">
                 <a class='anchor-text text-dark mb-d-none' href="">
                     {% if request.session.lang == 'eng' %}
                     HOME
@@ -33,7 +33,7 @@
                     ГОЛОВНА
                     {% endif %}
                 </a>
-                <p class='mb-d-none'>|</p>
+                <p class='mb-d-none sep'>|</p>
                 <a class='opacity-03 anchor-text text-dark mb-d-none' href="#about">
                     {% if request.session.lang == 'eng' %}
                     ABOUT
@@ -41,7 +41,7 @@
                     ПРО ІС
                     {% endif %}
                 </a>
-                <p class='mb-d-none'>|</p>
+                <p class='mb-d-none sep'>|</p>
                 <a class=' opacity-03 anchor-text text-dark mb-d-none' href="#services">
                     {% if request.session.lang == 'eng' %}
                     SERVICES
@@ -49,7 +49,7 @@
                     СЕРВІСИ
                     {% endif %}
                 </a>
-                <p class='mb-d-none'>|</p>
+                <p class='mb-d-none sep'>|</p>
                 <a class=' opacity-03 anchor-text text-dark mb-d-none' href="#contact">
                     {% if request.session.lang == 'eng' %}
                     CONTACT
@@ -59,10 +59,10 @@
 
                 </a>
             </div>
-            <div class="col-3 d-flex justify-content-end mb-d-none">
-                <button type="button" class="btn btn-outline-none mb-d-none" id="uk-lang">UA</button>
-                <button class="button-between-ua-en mb-d-none" disabled>|</button>
-                <button type="button" class="btn btn-outline-none mb-d-none" id="en-lang">EN</button>
+            <div class="col-3 d-flex justify-content-end mb-d-none" style="margin-top: 10px;">
+                <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark" id="uk-lang">UA</button>
+                <button class="button-between-ua-en mb-d-none sep" disabled>|</button>
+                <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark" id="en-lang">EN</button>
             </div>
         </div>
         <div class="row mt-5 mb-d-none">
@@ -100,13 +100,14 @@
                     {% endif %}
 
                 </p>
-                <a class='write-btn btn anchor-text' style="color:white; padding-top:10px" href="#contact">
-                    {% if request.session.lang == 'eng' %}
-                    Write
-                    {% else %}
-                    Написати
-                    {% endif %}
-
+                <a class='write-btn btn anchor-text' style="color:white; padding-top:10px;margin-left: 0px;" href="#contact">
+                    <div class="external-btn-blur">
+                        {% if request.session.lang == 'eng' %}
+                        Write
+                        {% else %}
+                        Написати
+                        {% endif %}
+                    </div>
                 </a>
             </div>
             <div class="col-5 mb-d-none">
@@ -152,13 +153,15 @@
 
                 </p>
                 <button class="write-btn m-top-10r">
-                    <p class="write-btn-text">
-                        {% if request.session.lang == 'eng' %}
-                        Write
-                        {% else %}
-                        Написати
-                        {% endif %}
-                    </p>
+                    <div class="external-btn-blur">
+                        <p class="write-btn-text">
+                            {% if request.session.lang == 'eng' %}
+                            Write
+                            {% else %}
+                            Написати
+                            {% endif %}
+                        </p>
+                    </div>
                 </button>
             </div>
             <div class="col-5 mb-l-none">
@@ -195,20 +198,19 @@
                 </h2>
             </div>
             <div class="col-11 offset-1">
+                {% if request.session.lang == 'eng' %}
                 <p class="white-text" style="margin-top: revert!important;">
-                    {% if request.session.lang == 'eng' %}
-                    itContinental is a reliable partner in the field of innovative technologies.
+                    itContinental<span  class="grey-text"> is a reliable partner in the field of innovative technologies.
                     The company's product portfolio <br> includes the latest solutions and software
                     from global manufacturers, the vast majority of which come from <br> the countries
-                    of the European Union and the United States of America, as well as own developments.
+                    of the European Union and the United States of America, as well as own developments.</span>
                     {% else %}
-                    itContinental - надійний партнер у сфері інноваційних технологій. Продуктовий портфель
+                    itContinental<span  class="grey-text">  - надійний партнер у сфері інноваційних технологій. Продуктовий портфель
                     компанії<br> включає новітні рішення та програмне забезпечення світових виробників,
                     переважна більшість яких<br> походять з країн Європейського Союзу та
-                    Сполучених Штатів Америки, також включає власні розробки.
+                    Сполучених Штатів Америки, також включає власні розробки.</span>
                     {% endif %}
-
-                </p>
+                    </p>
             </div>
             <div class="col-11  offset-1">
                 <p class="grey-text" style="margin-top: revert!important;">
@@ -257,15 +259,15 @@
             <div class="col-11 offset-1">
                 <p class="white-text" style="margin-top: revert!important;">
                     {% if request.session.lang == 'eng' %}
-                    itContinental is a reliable partner in the field of<br>innovative technologies.
+                    itContinental<span  class="grey-text"> is a reliable partner in the field of<br>innovative technologies.
                     The company's product <br>portfolio includes the latest solutions and software<br>
                     from global manufacturers, the vast majority of which<br> come from the countries
-                    of the European Union and<br> the United States of America, as well as own<br> developments.
+                    of the European Union and<br> the United States of America, as well as own<br> developments.</span>
                     {% else %}
-                    itContinental - надійний партнер у сфері інноваційних<br> технологій. Продуктовий портфель
+                    itContinental<span  class="grey-text">  - надійний партнер у сфері інноваційних<br> технологій. Продуктовий портфель
                     компанії включає<br> новітні рішення та програмне забезпечення світових <br>виробників,
                     переважна більшість яких походять з країн<br> Європейського Союзу та
-                    Сполучених Штатів Америки,<br> також включає власні розробки.
+                    Сполучених Штатів Америки,<br> також включає власні розробки.</span>
                     {% endif %}
                 </p>
             </div>
@@ -611,8 +613,8 @@
 
     <div class="container-fluid fith-block mb-d-none">
         <div class="row">
-            <div class="col-11 offset-1 ">
-                <h1 class="text-title-black mt-5 " style="top: 124rem;">
+            <div class="col-10 offset-1 d-flex justify-content-around">
+                <h1 class="text-title-black mt-5 " style="">
                     {% if request.session.lang == 'eng' %}
                     Technologies
                     {% else %}
