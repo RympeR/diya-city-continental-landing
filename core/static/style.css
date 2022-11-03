@@ -379,7 +379,7 @@ border-radius: 25px 25px 0px 0px;
     backdrop-filter: blur(41.5px);
     width: 164px;
     height: 39px;
-    position: fixed;
+    position: absolute;
     top: -1px;
     left: -1px;
     border-radius: 95px;
