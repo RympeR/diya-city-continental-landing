@@ -60,9 +60,11 @@
                 </a>
             </div>
             <div class="col-3 d-flex justify-content-end mb-d-none" style="margin-top: 10px;">
-                <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark" id="uk-lang">UA</button>
+                <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark"
+                    id="uk-lang">UA</button>
                 <button class="button-between-ua-en mb-d-none sep" disabled>|</button>
-                <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark" id="en-lang">EN</button>
+                <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark"
+                    id="en-lang">EN</button>
             </div>
         </div>
         <div class="row mt-5 mb-d-none">
@@ -100,8 +102,9 @@
                     {% endif %}
 
                 </p>
-                <div>
-                    <a class='write-btn btn anchor-text' style="color:white; padding-top:10px;margin-left: 0px;" href="#contact">
+                <a class='write-btn btn anchor-text' style="color:white; padding-top:10px;margin-left: 0px;"
+                    href="#contact">
+                    <div>
                         <div class="external-btn-blur safari_only">
                             {% if request.session.lang == 'eng' %}
                             Write
@@ -109,8 +112,8 @@
                             Написати
                             {% endif %}
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
             <div class="col-5 mb-d-none">
                 <img src="{% static 'images/BigPurple.svg' %}" class="big-purple" alt="big-purple">
@@ -202,17 +205,18 @@
             <div class="col-11 offset-1">
                 <p class="white-text" style="margin-top: revert!important;">
                     {% if request.session.lang == 'eng' %}
-                    itContinental<span  class="grey-text"> is a reliable partner in the field of innovative technologies.
-                    The company's product portfolio <br> includes the latest solutions and software
-                    from global manufacturers, the vast majority of which come from <br> the countries
-                    of the European Union and the United States of America, as well as own developments.</span>
+                    itContinental<span class="grey-text"> is a reliable partner in the field of innovative technologies.
+                        The company's product portfolio <br> includes the latest solutions and software
+                        from global manufacturers, the vast majority of which come from <br> the countries
+                        of the European Union and the United States of America, as well as own developments.</span>
                     {% else %}
-                    itContinental<span  class="grey-text">  - надійний партнер у сфері інноваційних технологій. Продуктовий портфель
-                    компанії<br> включає новітні рішення та програмне забезпечення світових виробників,
-                    переважна більшість яких<br> походять з країн Європейського Союзу та
-                    Сполучених Штатів Америки, також включає власні розробки.</span>
+                    itContinental<span class="grey-text"> - надійний партнер у сфері інноваційних технологій.
+                        Продуктовий портфель
+                        компанії<br> включає новітні рішення та програмне забезпечення світових виробників,
+                        переважна більшість яких<br> походять з країн Європейського Союзу та
+                        Сполучених Штатів Америки, також включає власні розробки.</span>
                     {% endif %}
-                    </p>
+                </p>
             </div>
             <div class="col-11  offset-1">
                 <p class="grey-text" style="margin-top: revert!important;">
@@ -261,15 +265,18 @@
             <div class="col-11 offset-1">
                 <p class="white-text" style="margin-top: revert!important;">
                     {% if request.session.lang == 'eng' %}
-                    itContinental<span  class="grey-text"> is a reliable partner in the field of<br>innovative technologies.
-                    The company's product <br>portfolio includes the latest solutions and software<br>
-                    from global manufacturers, the vast majority of which<br> come from the countries
-                    of the European Union and<br> the United States of America, as well as own<br> developments.</span>
+                    itContinental<span class="grey-text"> is a reliable partner in the field of<br>innovative
+                        technologies.
+                        The company's product <br>portfolio includes the latest solutions and software<br>
+                        from global manufacturers, the vast majority of which<br> come from the countries
+                        of the European Union and<br> the United States of America, as well as own<br>
+                        developments.</span>
                     {% else %}
-                    itContinental<span  class="grey-text">  - надійний партнер у сфері інноваційних<br> технологій. Продуктовий портфель
-                    компанії включає<br> новітні рішення та програмне забезпечення світових <br>виробників,
-                    переважна більшість яких походять з країн<br> Європейського Союзу та
-                    Сполучених Штатів Америки,<br> також включає власні розробки.</span>
+                    itContinental<span class="grey-text"> - надійний партнер у сфері інноваційних<br> технологій.
+                        Продуктовий портфель
+                        компанії включає<br> новітні рішення та програмне забезпечення світових <br>виробників,
+                        переважна більшість яких походять з країн<br> Європейського Союзу та
+                        Сполучених Штатів Америки,<br> також включає власні розробки.</span>
                     {% endif %}
                 </p>
             </div>
@@ -386,7 +393,7 @@
                 </p>
             </div>
             <!-- cards-block-convenience-2 -->
-            
+
         </div>
         <div class="cards-block-convenience-2 mt-4">
             <div class="card">
@@ -525,7 +532,7 @@
                     {% else %}
                     Ефективна технічна підтримка
                     {% endif %}
-    
+
                 </h3>
                 <p class="p-card-convenience">
                     {% if request.session.lang == 'eng' %}
@@ -533,10 +540,11 @@
                     quickly
                     and as best as possible.
                     {% else %}
-                    будьте впевнені, що у разі звернення, спеціалісти компанії допоможуть вирішити кейс як найшвидше, так і
+                    будьте впевнені, що у разі звернення, спеціалісти компанії допоможуть вирішити кейс як найшвидше,
+                    так і
                     найкраще.
                     {% endif %}
-    
+
                 </p>
             </div>
             <!-- cards-block-convenience-2 -->
@@ -556,14 +564,15 @@
                     of
                     communication with them and the vendor.
                     {% else %}
-                    вони онлайн та завжди раді вашим повідомленням по всім зручним та доступним каналам зв’язку з ними та
+                    вони онлайн та завжди раді вашим повідомленням по всім зручним та доступним каналам зв’язку з ними
+                    та
                     вендором.
                     {% endif %}
                 </p>
             </div>
         </div>
         <div class="cards-block-convenience-1 mt-3 row d-flex">
-    
+
             <div class="card">
                 <img class="position-absolute translate-middle images-block-convenience"
                     src="{% static 'images/convenience-five-img.svg' %}" alt="Icon">
@@ -582,33 +591,33 @@
                     для своїх клієнтів компанія завжди має в запасі додаткові бонуси, безоплатні послуги та багато
                     іншого.
                     {% endif %}
-    
+
                 </p>
             </div>
-    
+
             <div class="card">
                 <img class="position-absolute translate-middle images-block-convenience"
                     src="{% static 'images/convenience-img-six.svg' %}" alt="Icon">
-                    <h3 class="h3-convenience">
-                        {% if request.session.lang == 'eng' %}
-                        The best cooperation experience
-                        {% else %}
-                        Найкращий досвід співпраці
-                        {% endif %}
-    
-                    </h3>
-                    <p class="p-card-convenience">
-                        {% if request.session.lang == 'eng' %}
-                        the main goal of iC is the client's satisfaction with cooperation and benefit from the IT
-                        solution.
-                        They achieve it in every project.
-                        {% else %}
-                        головна мета іС - це задоволення клієнта від співпраці та користь від ІТ рішення. Вони досягають
-                        її в кожному проекті.
-    
-                        {% endif %}
-    
-                    </p>
+                <h3 class="h3-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    The best cooperation experience
+                    {% else %}
+                    Найкращий досвід співпраці
+                    {% endif %}
+
+                </h3>
+                <p class="p-card-convenience">
+                    {% if request.session.lang == 'eng' %}
+                    the main goal of iC is the client's satisfaction with cooperation and benefit from the IT
+                    solution.
+                    They achieve it in every project.
+                    {% else %}
+                    головна мета іС - це задоволення клієнта від співпраці та користь від ІТ рішення. Вони досягають
+                    її в кожному проекті.
+
+                    {% endif %}
+
+                </p>
             </div>
         </div>
     </div>
@@ -910,25 +919,25 @@
                         {% else %}
                         Все організовано і працює<br> як годинник
                         {% endif %}
-    
+
                     </p>
                 </div>
                 <div class="custom-digit-block text-center">
                     <h2 class="digits-title">201%</h2>
                     <h4 class="under-digits-title ">
                         {% if request.session.lang == 'eng' %}
-                            Scrupulousness
+                        Scrupulousness
                         {% else %}
-                            Скурпульозність
+                        Скурпульозність
                         {% endif %}
-                        </h4>
-                        <p class="small-white-text">
+                    </h4>
+                    <p class="small-white-text">
                         {% if request.session.lang == 'eng' %}
-                            They will do everything for the<br>success of the joint project
+                        They will do everything for the<br>success of the joint project
                         {% else %}
-                            Будуть робити все задля успіху<br>спільного проекту
+                        Будуть робити все задля успіху<br>спільного проекту
                         {% endif %}
-                        </p>
+                    </p>
                 </div>
             </div>
         </div>
@@ -970,24 +979,24 @@
                         {% else %}
                         Все організовано і працює<br> як годинник
                         {% endif %}
-    
+
                     </p>
                 </div>
                 <div class="custom-digit-block text-center mt-4">
                     <h2 class="digits-title">201%</h2>
                     <h4 class="under-digits-title ">
-                    {% if request.session.lang == 'eng' %}
+                        {% if request.session.lang == 'eng' %}
                         Scrupulousness
-                    {% else %}
+                        {% else %}
                         Скурпульозність
-                    {% endif %}
+                        {% endif %}
                     </h4>
                     <p class="small-white-text">
-                    {% if request.session.lang == 'eng' %}
+                        {% if request.session.lang == 'eng' %}
                         They will do everything for the<br>success of the joint project
-                    {% else %}
+                        {% else %}
                         Будуть робити все задля успіху<br>спільного проекту
-                    {% endif %}
+                        {% endif %}
                     </p>
                 </div>
             </div>
@@ -1212,9 +1221,9 @@
                     <h4 class="under-digits-title">
                         {% if request.session.lang == 'eng' %}
                         Write
-                    {% else %}
+                        {% else %}
                         Напишіть
-                    {% endif %}
+                        {% endif %}
                     </h4>
                 </div>
             </div>
@@ -1225,8 +1234,11 @@
                 <div class="col-4 offset-1">
                     <div class="container d-flex flex-column input-block">
 
-                        <input type="email" size="38" class="mb-3 pretify-input" placeholder="{% if request.session.lang == 'eng' %}Email{% else %}Електронна пошта{% endif %}" id="email">
-                        <textarea rows="3" cols="41" class="pretify-input" placeholder="{% if request.session.lang == 'eng' %}Guide text{% else %}Супровідний текст{% endif %}"
+                        <input type="email" size="38" class="mb-3 pretify-input"
+                            placeholder="{% if request.session.lang == 'eng' %}Email{% else %}Електронна пошта{% endif %}"
+                            id="email">
+                        <textarea rows="3" cols="41" class="pretify-input"
+                            placeholder="{% if request.session.lang == 'eng' %}Guide text{% else %}Супровідний текст{% endif %}"
                             id="guide"></textarea>
                         <div class="row  justify-content-center d-flex">
                             <button id="form-handler" type="submit" class="pretify-button">
@@ -1323,11 +1335,11 @@
             <div class="row mt-5 mb-3">
                 <div class="d-flex justify-content-center">
                     <h4 class="under-digits-title align-center">
-                    {% if request.session.lang == 'eng' %}
+                        {% if request.session.lang == 'eng' %}
                         Write
-                    {% else %}
+                        {% else %}
                         Напишіть
-                    {% endif %}
+                        {% endif %}
                     </h4>
                 </div>
             </div>
@@ -1335,8 +1347,11 @@
                 <div class="col-12 ">
                     <div class="container d-flex flex-column input-block">
 
-                        <input type="email" size="38" class="mb-3 pretify-input" placeholder="{% if request.session.lang == 'eng' %}Email{% else %}Електронна пошта{% endif %}" id="email">
-                        <textarea rows="3" cols="41" class="pretify-input" placeholder="{% if request.session.lang == 'eng' %}Guide text{% else %}Супровідний текст{% endif %}"
+                        <input type="email" size="38" class="mb-3 pretify-input"
+                            placeholder="{% if request.session.lang == 'eng' %}Email{% else %}Електронна пошта{% endif %}"
+                            id="email">
+                        <textarea rows="3" cols="41" class="pretify-input"
+                            placeholder="{% if request.session.lang == 'eng' %}Guide text{% else %}Супровідний текст{% endif %}"
                             id="guide"></textarea>
                         <div class="row  justify-content-center d-flex">
                             <button id="form-handler" type="submit" class="pretify-button">
@@ -1391,7 +1406,7 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-    $("#form-handler").click(function(){
+    $("#form-handler").click(function () {
         alert('clicker')
         let email = document.getElementById('email').value;
         let text = document.getElementById('guide').value;
@@ -1399,12 +1414,12 @@
             url: "{% url 'process_form' %}",
             type: "post",
             data: {
-                email:email,
-                text:text
+                email: email,
+                text: text
             },
             success: function (result) {
                 console.log(result, "Success");
-                
+
             },
             error: function (result) {
                 console.log(result, "location is bad");
@@ -1422,7 +1437,7 @@
             url: "{% url 'uk' %}",
             type: "get",
             success: function (result) {
-                window.location.href ='/'
+                window.location.href = '/'
                 console.log(result);
             },
             error: function (result) {
@@ -1432,12 +1447,12 @@
     });
     $("#en-lang").click(function () {
         $.ajax({
-            
+
             url: "{% url 'en' %}",
             type: "get",
             success: function (result) {
                 console.log(result);
-                window.location.href ='/'
+                window.location.href = '/'
             },
             error: function (result) {
                 console.log(result, "location is bad");
