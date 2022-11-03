@@ -384,6 +384,8 @@ border-radius: 25px 25px 0px 0px;
     left: -1px;
     border-radius: 95px;
     padding-top: 10px;
+    z-index: 1;
+    -webkit-transform: translateZ(0);
 }
 
 .purple-block {
