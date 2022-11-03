@@ -736,18 +736,27 @@ textarea {
         background-color: #000000;
         overflow-x: hidden;
         font-family: 'Gilroy-Bold', sans-serif;
+
     }
 
     body {
         background-color: #000000;
         overflow-x: hidden;
         font-family: 'Gilroy-Bold', sans-serif;
+
     }
 
     .mb-d-none {
         display: none;
     }
-
+    .external-btn-blur{
+        border-radius: 96.3924px;
+        position: absolute;
+        width: 205px;
+        height: 49px;
+        top: -2px;
+        left: 0.2px;
+    }
     .under-title-text {
         font-family: 'Gilroy';
         font-style: normal;
@@ -822,7 +831,7 @@ textarea {
         height: 25.53px;
         left: 173px;
         z-index: 90;
-        top: 665px;
+        top: 751px;
     }
 
     .second-block {
