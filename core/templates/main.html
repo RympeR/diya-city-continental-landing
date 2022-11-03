@@ -100,15 +100,17 @@
                     {% endif %}
 
                 </p>
-                <a class='write-btn btn anchor-text' style="color:white; padding-top:10px;margin-left: 0px;" href="#contact">
-                    <div class="external-btn-blur">
-                        {% if request.session.lang == 'eng' %}
-                        Write
-                        {% else %}
-                        Написати
-                        {% endif %}
-                    </div>
-                </a>
+                <div>
+                    <a class='write-btn btn anchor-text' style="color:white; padding-top:10px;margin-left: 0px;" href="#contact">
+                        <div class="external-btn-blur safari_only">
+                            {% if request.session.lang == 'eng' %}
+                            Write
+                            {% else %}
+                            Написати
+                            {% endif %}
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="col-5 mb-d-none">
                 <img src="{% static 'images/BigPurple.svg' %}" class="big-purple" alt="big-purple">
