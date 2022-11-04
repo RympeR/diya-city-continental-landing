@@ -949,7 +949,7 @@ text-align: center;
         border-radius: 0px;
         height: 686px;
         width: 100%;
-        margin-top: -   3rem;
+        margin-top: -3rem;
     }
 
     .arrows {
@@ -1225,7 +1225,7 @@ text-align: center;
     }
 
     .six-block {
-        height: 537px;
+        min-height: 494px;
         width: 100%;
         background: url('./images/bg-mobile-digits.svg');
     }
