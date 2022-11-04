@@ -150,17 +150,14 @@
                     {% endif %}
 
                 </p>
-                <button class="write-btn m-top-10r">
-                    <div class="external-btn-blur">
-                        <p class="write-btn-text">
+                <a class='write-btn btn anchor-text' style="color:white!important; padding-top:16px;margin-left: 0px;"
+                    href="#contact">
                             {% if request.session.lang == 'eng' %}
                             Write
                             {% else %}
                             Написати
                             {% endif %}
-                        </p>
-                    </div>
-                </button>
+                </a>
             </div>
             <div class="col-5 mb-l-none">
                 <img src="{% static 'images/BigPurple.svg' %}" class="big-purple" alt="big-purple">
