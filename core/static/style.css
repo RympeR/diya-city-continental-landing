@@ -61,6 +61,10 @@ textarea {
     margin-top: 8rem;
 }
 
+.m-top-5r {
+    margin-top: 5rem;
+}
+
 .m-left-10r {
     margin-left: 10rem !important;
 }
@@ -128,7 +132,7 @@ textarea {
 }
 
 .third-block {
-    height: 450px;
+    min-height: 450px;
     /* margin-top: -15px; */
     /* background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0.01%, rgba(255, 255, 255, 0) 99.5%, rgba(255, 255, 255, 0.59) 99.5%), url(image.png); */
     background-color: #000000;
@@ -137,7 +141,7 @@ textarea {
 
 .block-4 {
     background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/convience-bg.svg');
-    height: 1212px;
+    min-height: 1042px;
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -147,7 +151,7 @@ textarea {
 
 
 .six-block {
-    height: 500px;
+    height: 370px;
     /* margin-top: -15px; */
     /* background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0.01%, rgba(255, 255, 255, 0) 99.5%, rgba(255, 255, 255, 0.59) 99.5%), url(image.png); */
     background-image: linear-gradient(90.01deg, rgba(0, 0, 0, 0.6) 0.01%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.6) 100%), url('./images/block-6.svg');
@@ -257,13 +261,17 @@ textarea {
     font-size: 12px;
     line-height: 15px;
     /* identical to box height */
-    color: #000000;
+    color: #000000!important;
+    
     text-decoration: none;
     margin-top: 6px;
     margin-left: 1rem;
     margin-right: 1rem;
 }
+.disabled-lang{
+    color: #00000049!important;
 
+}
 .anchor-text:hover {
     color: #212529 !important;
     opacity: 1 !important;
@@ -370,7 +378,7 @@ textarea {
     /* background: rgba(255, 255, 255, 0.27); */
     color: #FFFFFF;
     border-radius: 95px;
-    background: linear-gradient(90deg, #030205 0%, #9C5FFE 89.58%);
+    background: linear-gradient(90deg, #030205 0%, #9C5FFE 100%);
     backdrop-filter: blur(15px);
     /* Note: backdrop-filter has minimal browser support */
     width: 164px;
@@ -804,7 +812,40 @@ text-align: center;
 
     }
 }
-
+@media only screen and (min-width:601px) and (max-width:1220px) {
+    .card {
+        font-size: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 50px;
+        border-radius: 30px;
+        text-align: center;
+        border: 1px solid #FFFFFF;
+        background: rgba(255, 255, 255, 0.15);
+        opacity: 0.88;
+        width: 262px;
+        height: 262px;
+    }
+    .block-4{
+        background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.6) 100%), url(./images/block-8-9-bg.svg);
+        background-repeat: no-repeat;
+        background-position-y: 5rem;
+        background-size: auto;
+    }
+    .m-top-3{
+        margin-top: 3rem!important;
+    }
+    .custom-digit-block{
+        margin-left: -0.5rem;
+        margin-right: 1.5rem;
+    }
+    .second-block{
+        background-position-y: 1rem;
+    }
+    .industries-block{
+        width:212px;
+    }
+}
 @media only screen and (max-width:600px) {
 
     html {
@@ -872,7 +913,7 @@ text-align: center;
         left: 37px;
         top: 419px;
 
-        background: linear-gradient(90deg, #030205 0%, #9306b9 89.58%);
+        background: linear-gradient(90deg, #030205 0%, #9306b9 100%);
         backdrop-filter: blur(15.2198px);
         /* Note: backdrop-filter has minimal browser support */
 

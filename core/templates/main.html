@@ -36,9 +36,9 @@
                 <p class='mb-d-none sep'>|</p>
                 <a class='opacity-03 anchor-text text-dark mb-d-none' href="#about">
                     {% if request.session.lang == 'eng' %}
-                    ABOUT
+                    ABOUT iC
                     {% else %}
-                    ПРО ІС
+                    ПРО iС
                     {% endif %}
                 </a>
                 <p class='mb-d-none sep'>|</p>
@@ -101,17 +101,13 @@
                     {% endif %}
 
                 </p>
-                <a class='write-btn btn anchor-text' style="color:white; padding-top:10px;margin-left: 0px;"
+                <a class='write-btn btn anchor-text' style="color:white!important; padding-top:10px;margin-left: 0px;"
                     href="#contact">
-                    <div>
-                        <div class="external-btn-blur safari_only">
                             {% if request.session.lang == 'eng' %}
                             Write
                             {% else %}
                             Написати
                             {% endif %}
-                        </div>
-                    </div>
                 </a>
             </div>
             <div class="col-5 mb-d-none">
@@ -311,7 +307,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid block-4 rounded mb-d-none" id="services">
+    <div class="container-fluid block-4 rounded mb-d-none">
 
         <div class="convenience-h3">
             <h3 class="convenience-h3-text">
@@ -325,7 +321,7 @@
         </div>
 
         <div class="cards-block-convenience-1 mt-5 row">
-            <div class=" col-md-6 card col-4  ">
+            <div class=" card col-4 col-md-6  ">
                 <img class="position-absolute translate-middle images-block-convenience"
                     src="{% static 'images/convenience-first-img.svg' %}" alt="Icon">
                 <h3 class="h3-convenience">
@@ -465,7 +461,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid block-4 rounded mb-l-none" id="services">
+    <div class="container-fluid block-4 rounded mb-l-none">
 
         <div class="convenience-h3">
             <h3 class="convenience-h3-text">{% if request.session.lang == 'eng' %}
@@ -621,7 +617,7 @@
         </div>
     </div>
 
-    <div class="container-fluid fith-block mb-d-none">
+    <div class="container-fluid fith-block mb-d-none"   id="services">
         <div class="row">
             <div class="col-10 offset-1 d-flex justify-content-center">
                 <div class="purple-block-white">
@@ -716,7 +712,7 @@
         </div>
     </div>
     {% if request.session.lang == 'eng' %}
-    <div class="container-fluid fith-block mb-l-none">
+    <div class="container-fluid fith-block mb-l-none"  id="services">
         <!-- <div class="row">
             <div class="col-11 offset-1 ">
                 <h1 class="text-title-black mt-5 " style="top: 124rem;">Technologies</h1>
@@ -892,7 +888,7 @@
 
     <div class="container-fluid six-block mb-d-none">
         <div class="row">
-            <div class="col-12 m-top-8r d-flex justify-content-center align-items-center">
+            <div class="col-12 m-top-5r d-flex justify-content-center align-items-center m-top-3">
                 <div class="custom-digit-block flex-column d-flex justify-content-center">
                     <h2 class="digits-title text-center">100+</h2>
                     <h4 class="under-digits-title text-center">
@@ -1188,7 +1184,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid eigth-block mb-d-none" id="contact">
+    <div class="container-fluid eigth-block mb-d-none">
         <h1 class="white-title m-top-15r pd-top-7r pd-bot-4r d-flex justify-content-center">
             {% if request.session.lang == 'eng' %}
             Industries
@@ -1243,7 +1239,7 @@
                     </h4>
                 </div>
             </div>
-            <div class="row d-flex justify-space-around m-bot-10r ">
+            <div class="row d-flex justify-space-around m-bot-10r " id="contact">
                 <div class="col-6  justify-content-center d-flex">
                     <img class="" src="{% static 'images/footer-big-logo.svg' %}" width="473" height="190" alt="">
                 </div>
@@ -1453,6 +1449,7 @@
             url: "{% url 'uk' %}",
             type: "get",
             success: function (result) {
+                localStorage.lang ='uk'
                 window.location.href = '/'
                 console.log(result);
             },
@@ -1463,10 +1460,11 @@
     });
     $("#en-lang").click(function () {
         $.ajax({
-
+            
             url: "{% url 'en' %}",
             type: "get",
             success: function (result) {
+                localStorage.lang ='en'
                 console.log(result);
                 window.location.href = '/'
             },
@@ -1475,7 +1473,17 @@
             },
         });
     });
-    document.body.addEventListener('touchmove', function () { return false; });
+    if (!localStorage.lang || localStorage.lang == 'uk') {
+        (()=>{
+            document.getElementById('en-lang').classList.add('disabled-lang')
+            document.getElementById('uk-lang').classList.remove('disabled-lang')
+        })()
+    } else {
+        (()=>{
+            document.getElementById('en-lang').classList.remove('disabled-lang')
+            document.getElementById('uk-lang').classList.add('disabled-lang')
+        })()
+    }
 </script>
 
 </html>
