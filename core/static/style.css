@@ -1053,7 +1053,7 @@ text-align: center;
     .block-4 {
         min-height: 616px;
         max-width: 100%;
-        margin-bottom: -26px;
+        margin-bottom: -52px;
         box-sizing: content-box;
         background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/block-4-mobile.svg');
     }
@@ -1065,7 +1065,7 @@ text-align: center;
         font-size: 30.1491px;
         line-height: 37px;
         color: #FFFFFF;
-        margin: -3rem auto 2rem auto;
+        margin: -5rem auto 1rem auto;
     }
 
     .cards-block-convenience-1 {
@@ -1346,7 +1346,7 @@ text-align: center;
     }
 
     .convenience-h3 {
-        margin-bottom: 0px;
+        margin-bottom: -17px;
     }
 
     .under-digits-title {
