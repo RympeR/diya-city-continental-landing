@@ -1046,6 +1046,8 @@ text-align: center;
     .third-block {
         min-height: 360px;
         width: 100%;
+        margin-top: -3rem;
+        margin-bottom: -7rem;
     }
 
     .block-4 {
@@ -1063,7 +1065,7 @@ text-align: center;
         font-size: 30.1491px;
         line-height: 37px;
         color: #FFFFFF;
-        margin: -4rem 9rem 0px auto;
+        margin: -3rem auto 2rem auto;
     }
 
     .cards-block-convenience-1 {
