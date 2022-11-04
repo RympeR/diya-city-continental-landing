@@ -327,7 +327,7 @@ textarea {
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .grey-text {
