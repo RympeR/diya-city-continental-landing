@@ -670,11 +670,7 @@ text-align: center;
             padding-top: 12px;
 
         }
-        .arrows {
-            top: 104%;
-            left: 50%;
-            position: fixed;
-        }
+
     }
 }
 
@@ -689,11 +685,7 @@ text-align: center;
             padding-top: 12px;
 
         }
-        .arrows {
-            top: 104%;
-            left: 50%;
-            position: fixed;
-        }
+
     }
 }
 
@@ -805,9 +797,8 @@ text-align: center;
     }
 
     .arrows {
-        bottom: -27%;
-        left: 50%;
-        position: absolute;
+        height: 33px;
+        width: 59px;
     }
 
     .block-footer-1 {
@@ -963,7 +954,7 @@ text-align: center;
 
     .arrows {
         position: absolute;
-        width: 30px;
+        width: 128px;
         height: 25.53px;
         left: 155px;
         z-index: 90;
