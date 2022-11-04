@@ -1384,21 +1384,17 @@
                     </a>
                 </div>
             </div>
-            <div class="row d-flex flex-column justify-center">
-                <div class="col-11 offset-1 d-flex mt-3">
-                    <img class="" src="{% static 'images/ci_location.svg' %}" alt="">
-                    <a href="Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159"
-                        class="small-text pretify-link  m-left-1r" style="margin-top: 5px;font-size:10px">
-                        {% if request.session.lang == 'eng' %}
-                        Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159
-                        {% else %}
-                        Україна м. Київ, вулиця Михайла Ломоносова, 73а, 03189 офіс 159
-                        {% endif %}
+            <div class="row d-flex flex-column justify-center mt-3">
+                <img class="" src="{% static 'images/ci_location.svg' %}" alt="">
+                <a href="Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159"
+                    class="small-text pretify-link  m-left-1r" style="margin-top: 5px;font-size:10px">
+                    {% if request.session.lang == 'eng' %}
+                    Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159
+                    {% else %}
+                    Україна м. Київ, вулиця Михайла Ломоносова, 73а, 03189 офіс 159
+                    {% endif %}
 
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 offset-1" style="margin-top: 2em; padding-bottom:3em">
+                </a>
                 <img class="copyright-image" src="{% static 'images/Copyright.svg' %}" alt="">
             </div>
         </div>

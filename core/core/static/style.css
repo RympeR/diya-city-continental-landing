@@ -1231,13 +1231,13 @@ text-align: center;
     }
 
     .fith-block {
-        min-height: 558px;
+        min-height: 580px;
         background: url('./images/tecnologies-bg.svg');
         background-size: cover;
     }
 
     .fith-block-ukr {
-        min-height: 558px;
+        min-height: 580px;
         background: url('./images/tecnologies-bg-ukr.svg');
         background-size: cover;
     }
@@ -1654,5 +1654,10 @@ text-align: center;
         object-fit: cover;
         z-index: 0;
         object-position: 19% 0;
+    }
+    .mail-image{
+        height: 14px;
+        width: 14px;
+        margin-top: 5px;
     }
 }
