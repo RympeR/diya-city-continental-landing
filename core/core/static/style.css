@@ -331,7 +331,6 @@ textarea {
 }
 
 .purple-block-text {
-    padding: 43px 66px 43px 66px;
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
@@ -401,8 +400,9 @@ textarea {
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(25px);
     /* Note: backdrop-filter has minimal browser support */
-    height: 117px;
-    border-radius: 22px
+    height: 115px;
+    border-radius: 22px;
+    width: 230px;
 }
 
 
@@ -750,10 +750,21 @@ text-align: center;
 
 /* !! media 450 styles*/
 @media only screen and (min-width:601px) {
+    .custom-digit-block{
+        margin-left:  3.5rem;
+        margin-right: 3.5rem;
+    }
     .mb-l-none {
         display: none;
     }
-
+    
+    .purple-block {
+        padding-top: 45px;
+        text-align: center;
+        margin-left:  1.5rem;
+        margin-right: 1.5rem;
+    }
+    
     .fith-block {
         height: 600px;
         background: #FFFFFF;
