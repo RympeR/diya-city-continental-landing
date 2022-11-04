@@ -95,7 +95,7 @@ textarea {
 
 /*!!block styles*/
 .sep {
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 0.5px solid rgba(0, 0, 0, 0.22);
 /* transform: rotate(90deg); */
 }
 
@@ -666,6 +666,11 @@ text-align: center;
             padding-top: 12px;
 
         }
+        .arrows {
+            top: 104%;
+            left: 50%;
+            position: fixed;
+        }
     }
 }
 
@@ -679,6 +684,11 @@ text-align: center;
             left: 9.1%;
             padding-top: 12px;
 
+        }
+        .arrows {
+            top: 104%;
+            left: 50%;
+            position: fixed;
         }
     }
 }

@@ -666,6 +666,11 @@ text-align: center;
             padding-top: 12px;
 
         }
+        .arrows {
+            top: 104%;
+            left: 50%;
+            position: fixed;
+        }
     }
 }
 
@@ -679,6 +684,11 @@ text-align: center;
             left: 9.1%;
             padding-top: 12px;
 
+        }
+        .arrows {
+            top: 104%;
+            left: 50%;
+            position: fixed;
         }
     }
 }
