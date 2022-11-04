@@ -112,8 +112,6 @@
             </div>
             <div class="col-4 mb-d-none">
                 <img src="{% static 'images/BigPurple.svg' %}" class="big-purple" style="margin-left:-15rem;" alt="big-purple">
-                <img src="{% static 'images/first-block-arrows.svg' %}" class="arrows" alt="big-purple">
-
             </div>
         </div>
         <div class="row mt-5 mb-l-none">
@@ -166,11 +164,13 @@
             </div>
             <div class="col-5 mb-l-none">
                 <img src="{% static 'images/BigPurple.svg' %}" class="big-purple" alt="big-purple">
-                <img src="{% static 'images/first-block-arrows.svg' %}" class="arrows" alt="big-purple">
             </div>
         </div>
+        <div class="row d-flex justify-content-center">
+            <img src="{% static 'images/first-block-arrows.svg' %}" class="arrows" alt="big-purple">
+        </div>
     </div>
-    <div class="container-fluid second-block rounded-bottom">
+    <div class="container-fluid second-block rounded-bottom"  id="about">
         <div class="row">
             <div class="col-12  mt-5 d-flex justify-content-center align-items-center">
                 <h2 class="white-title white-title-mobile mt-5">
@@ -185,7 +185,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid third-block rounded mb-d-none" id="about">
+    <div class="container-fluid third-block rounded mb-d-none">
         <div class="row mt-5">
             <div class="col-11 offset-1 mt-5">
                 <h2 class="white-title" style="margin-top: revert!important;">
@@ -246,7 +246,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid third-block rounded mb-l-none" id="about">
+    <div class="container-fluid third-block rounded mb-l-none">
         <div class="row">
             <div class="col-11 offset-1">
                 <h2 class="white-title" style="margin-top: revert!important;">
@@ -326,7 +326,7 @@
                     src="{% static 'images/convenience-first-img.svg' %}" alt="Icon">
                 <h3 class="h3-convenience">
                     {% if request.session.lang == 'eng' %}
-                    The best IT solutions and technologies
+                    The best IT technologies
                     {% else %}
                     Найкращі ІТ технології
                     {% endif %}
@@ -398,7 +398,7 @@
                     {% if request.session.lang == 'eng' %}
                     Сonvenience of communication
                     {% else %}
-                    спілкування
+                    Доброзичливий підхід у спілкуванні
                     {% endif %}
                 </h3>
                 <p class="p-card-convenience2">
@@ -477,7 +477,7 @@
                     src="{% static 'images/convenience-first-img.svg' %}" alt="Icon">
                 <h3 class="h3-convenience">
                     {% if request.session.lang == 'eng' %}
-                    The best IT solutions and technologies
+                    The best IT technologies
                     {% else %}
                     Найкращі ІТ технології
                     {% endif %}
@@ -550,7 +550,7 @@
                     {% if request.session.lang == 'eng' %}
                     Сonvenience of communication
                     {% else %}
-                    спілкування
+                    Доброзичливий підхід у спілкуванні
                     {% endif %}
                 </h3>
                 <p class="p-card-convenience">
