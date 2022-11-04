@@ -603,6 +603,8 @@ textarea {
     line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+    opacity: 0.5;
+
 }
 
 .p-card-convenience2 {
@@ -618,6 +620,7 @@ textarea {
     line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+    opacity: 0.5;
 }
 
 .h3-convenience {
@@ -801,7 +804,7 @@ text-align: center;
     }
 
     .arrows {
-        top: 83%;
+        bottom: -27%;
         left: 50%;
         position: absolute;
     }
