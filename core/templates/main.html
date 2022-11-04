@@ -1375,17 +1375,13 @@
 
                 </div>
             </div>
-            <div class="row d-flex flex-column justify-center">
-                <div class="col-6 offset-3 d-flex" style="margin-top: 1em;">
+            <div class="row d-flex flex-column justify-center mt-1">
                     <img class="mail-image" src="{% static 'images/mdi_email.svg' %}" alt="">
                     <a href="mailto:info@itcontinental.pro" class="small-text pretify-link m-left-1r"
                         style="margin-top: 5px;">
                         info@itcontinental.pro
                     </a>
-                </div>
-            </div>
-            <div class="row d-flex flex-column justify-center mt-3">
-                <img class="location-image" src="{% static 'images/ci_location.svg' %}" alt="">
+                <img class="location-image mt-3" src="{% static 'images/ci_location.svg' %}" alt="">
                 <a href="Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159"
                     class="small-text pretify-link  m-left-1r" style="margin-top: 5px;font-size:10px">
                     {% if request.session.lang == 'eng' %}
