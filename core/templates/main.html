@@ -33,7 +33,7 @@
                     ГОЛОВНА
                     {% endif %}
                 </a>
-                <p class='mb-d-none sep'>|</p>
+                <span class='mb-d-none sep'>|</span>
                 <a class='opacity-03 anchor-text text-dark mb-d-none' href="#about">
                     {% if request.session.lang == 'eng' %}
                     ABOUT iC
@@ -41,7 +41,7 @@
                     ПРО iС
                     {% endif %}
                 </a>
-                <p class='mb-d-none sep'>|</p>
+                <span class='mb-d-none sep'>|</span>
                 <a class=' opacity-03 anchor-text text-dark mb-d-none' href="#services">
                     {% if request.session.lang == 'eng' %}
                     SERVICES
@@ -49,7 +49,7 @@
                     СЕРВІСИ
                     {% endif %}
                 </a>
-                <p class='mb-d-none sep'>|</p>
+                <span class='mb-d-none sep'>|</span>
                 <a class=' opacity-03 anchor-text text-dark mb-d-none' href="#contact">
                     {% if request.session.lang == 'eng' %}
                     CONTACT
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="row mt-5 mb-d-none">
-            <div class="col-5 offset-1">
+            <div class="col-7 offset-1">
                 <h1 class="text-title-black m-top-15r">
                     {% if request.session.lang == 'eng' %}
                     Innovative technologies
@@ -110,8 +110,8 @@
                             {% endif %}
                 </a>
             </div>
-            <div class="col-5 mb-d-none">
-                <img src="{% static 'images/BigPurple.svg' %}" class="big-purple" alt="big-purple">
+            <div class="col-4 mb-d-none">
+                <img src="{% static 'images/BigPurple.svg' %}" class="big-purple" style="margin-left:-15rem;" alt="big-purple">
                 <img src="{% static 'images/first-block-arrows.svg' %}" class="arrows" alt="big-purple">
 
             </div>

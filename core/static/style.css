@@ -95,7 +95,8 @@ textarea {
 
 /*!!block styles*/
 .sep {
-    color: #cfb5b5b0;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+/* transform: rotate(90deg); */
 }
 
 .arrows {
@@ -844,6 +845,9 @@ text-align: center;
     }
     .industries-block{
         width:212px;
+    }
+    .fith-block{
+        margin-top: -3em;
     }
 }
 @media only screen and (max-width:600px) {
