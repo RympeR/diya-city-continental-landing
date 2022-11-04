@@ -62,8 +62,7 @@
             <div class="col-3 d-flex justify-content-end mb-d-none" style="margin-top: 10px;">
                 <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark"
                     id="uk-lang">UA</button>
-                <button class="button-between-ua-en mb-d-none sep" disabled>|</button>
-                <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark"
+                <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark" style="margin-left: -11px;"
                     id="en-lang">EN</button>
             </div>
         </div>
@@ -395,7 +394,7 @@
             <!-- cards-block-convenience-2 -->
 
         </div>
-        <div class="cards-block-convenience-2 mt-4">
+        <div class="cards-block-convenience-2" style="margin-top: 2.5rem!important;">
             <div class="card">
                 <img class="position-absolute translate-middle images-block-convenience"
                     src="{% static 'images/convenience-four-img.svg' %}" alt="Icon">
@@ -425,7 +424,7 @@
                     {% if request.session.lang == 'eng' %}
                     More benefits than in the contract
                     {% else %}
-                    Більше вигоди ніж передбачено контрактом
+                    Більше вигоди ніж за контрактом
                     {% endif %}
                 </h3>
                 <p class="p-card-convenience2">
@@ -580,7 +579,7 @@
                     {% if request.session.lang == 'eng' %}
                     More benefits than in the contract
                     {% else %}
-                    Більше вигоди ніж передбачено контрактом
+                    Більше вигоди ніж за контрактом
                     {% endif %}
                 </h3>
                 <p class="p-card-convenience">
@@ -1234,7 +1233,7 @@
                 <div class="col-4 offset-1">
                     <div class="container d-flex flex-column input-block">
 
-                        <input type="email" size="38" class="mb-3 pretify-input"
+                        <input type="email" size="36" class="mb-3 pretify-input"
                             placeholder="{% if request.session.lang == 'eng' %}Email{% else %}Електронна пошта{% endif %}"
                             id="email">
                         <textarea rows="3" cols="41" class="pretify-input"
@@ -1258,14 +1257,14 @@
                     <img class="copyright-image" src="{% static 'images/Copyright.svg' %}" alt="">
                 </div>
                 <div class="col-1 d-flex" style="margin-top: 2px;">
-                    <img class="copyright-image" src="{% static 'images/mdi_email.svg' %}" alt="">
+                    <img class="copyright-image" src="{% static 'images/mdi_email.svg' %}" style="height:14px; width:14px" alt="">
                     <a href="mailto:info@itcontinental.pro" class="small-text pretify-link m-left-1r"
                         style="margin-top: 5px;">
                         info@itcontinental.pro
                     </a>
                 </div>
                 <div class="col-5 m-left-2r  d-flex">
-                    <img class="m-left-10r" src="{% static 'images/ci_location.svg' %}" alt="">
+                    <img class="m-left-10r" src="{% static 'images/ci_location.svg' %}"  style="height:18px; width:18px"  alt="">
                     <a href="Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159"
                         class="small-text pretify-link  m-left-1r" style="margin-top: 5px;">
                         {% if request.session.lang == 'eng' %}

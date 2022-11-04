@@ -91,7 +91,7 @@ textarea {
 
 /*!!block styles*/
 .sep {
-    color: #564444b0;
+    color: #cfb5b5b0;
 }
 
 .arrows {
@@ -196,7 +196,7 @@ textarea {
 .convenience-h3-text {
     font-weight: 600;
     font-size: 50px;
-    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     color: #FFFFFF;
 
 }
@@ -408,7 +408,7 @@ textarea {
 
 .industries-block {
     margin-left: 2rem;
-    width: 330px;
+    width: 289px;
     height: 155px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(85px);
@@ -441,6 +441,12 @@ textarea {
     border: 1px solid rgba(255, 255, 255, 0.15);
     ;
     background: #40305C;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 11px;
+        color: #FFFFFF;
 }
 
 #email {
@@ -534,22 +540,21 @@ textarea {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
-    width: 330px;
-    height: 311px;
     border-radius: 30px;
     text-align: center;
     border: 1px solid #FFFFFF;
     background: rgba(255, 255, 255, 0.15);
 
     opacity: 0.88;
-
+    width: 296px;
+    height: 296px;
 }
 
 
 .cards-block-convenience-1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
@@ -562,7 +567,7 @@ textarea {
 .cards-block-convenience-2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     margin-left: 0px;
     margin-right: 0px;
@@ -577,18 +582,32 @@ textarea {
 }
 
 .p-card-convenience {
-    margin-top: 60px;
+    margin-top: 11px;
     margin-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 26px;
+    margin-right: 26px;
+    color: #FFFFFF;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
     color: #FFFFFF;
 }
 
 .p-card-convenience2 {
-    margin-top: 60px;
+    margin-top: 11px;
     margin-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 26px;
+    margin-right: 26px;
+    color: #FFFFFF;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
     color: #FFFFFF;
 }
 
@@ -597,6 +616,12 @@ textarea {
     margin-left: 30px;
     margin-right: 30px;
     color: #FFFFFF;
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 23px;
+text-align: center;
 }
 
 .h3-convenience-last-card {
@@ -604,6 +629,13 @@ textarea {
     margin-right: 15px;
     margin-top: 47px;
     color: #FFFFFF;
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 23px;
+text-align: center;
+
 }
 
 .external-blur {
@@ -728,10 +760,28 @@ textarea {
         box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7);
         border-radius: 25px 25px 0px 0px;
     }
-    .arrows{
+
+    .arrows {
         top: 83%;
         left: 50%;
         position: absolute;
+    }
+
+    .block-footer-1 {
+        position: absolute;
+        bottom: 1em;
+    }
+
+    .block-footer-2 {
+        position: absolute;
+        bottom: 1em;
+
+    }
+
+    .block-footer-3 {
+        position: absolute;
+        bottom: 1em;
+
     }
 }
 
@@ -754,7 +804,8 @@ textarea {
     .mb-d-none {
         display: none;
     }
-    .external-btn-blur{
+
+    .external-btn-blur {
         border-radius: 96.3924px;
         position: absolute;
         width: 205px;
@@ -762,6 +813,7 @@ textarea {
         top: -2px;
         left: 0.2px;
     }
+
     .under-title-text {
         font-family: 'Gilroy';
         font-style: normal;
@@ -800,7 +852,7 @@ textarea {
         left: 37px;
         top: 419px;
 
-        background: linear-gradient(90deg, #030205 0%, #9C5FFE 89.58%);
+        background: linear-gradient(90deg, #030205 0%, #9306b9 89.58%);
         backdrop-filter: blur(15.2198px);
         /* Note: backdrop-filter has minimal browser support */
 
@@ -834,9 +886,9 @@ textarea {
         position: absolute;
         width: 30px;
         height: 25.53px;
-        left: 173px;
+        left: 155px;
         z-index: 90;
-        top: 751px;
+        top: 799px;
     }
 
     .second-block {
@@ -948,6 +1000,24 @@ textarea {
         margin-left: -15px;
     }
 
+    .pretify-button {
+        width: 140px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(59.6491px);
+        color: white;
+        border-radius: 15.4386px;
+        margin-top: -22px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: #40305C;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 11px;
+        color: #FFFFFF;
+    }
+
     .card {
         font-size: 12px;
         margin-left: 16px;
@@ -987,7 +1057,7 @@ textarea {
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 300;
-        font-size: 9px;
+        font-size: 8px;
         /* line-height: 8px; */
         text-align: center;
 
@@ -1009,6 +1079,10 @@ textarea {
         line-height: 8px;
         text-align: center;
         color: #FFFFFF;
+    }
+
+    .external-btn-blur {
+        background-color: #00000000;
     }
 
     .purple-block-mobile {
