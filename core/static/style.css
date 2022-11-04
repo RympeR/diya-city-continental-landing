@@ -1660,4 +1660,10 @@ text-align: center;
         width: 14px;
         margin-top: 5px;
     }
+    .location-image{
+        height: 18px;
+        width: 18px;
+        margin-top: 5px;
+
+    }
 }
