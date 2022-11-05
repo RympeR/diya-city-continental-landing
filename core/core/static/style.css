@@ -100,7 +100,7 @@ textarea {
 }
 
 .arrows {
-    margin-top: -8em;
+    margin-top: -4em;
 }
 
 .first-block {
@@ -109,6 +109,7 @@ textarea {
     z-index: 3;
     background-image: url('./images/Line-back.svg');
     background-repeat: no-repeat;
+    min-height:900px;
 }
 
 .navigation-block {
@@ -388,7 +389,8 @@ textarea {
     border-radius: 95px;
     backdrop-filter: blur(41.5px);
     /* background:url('../images/write.svg') no-repeat; */
-
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.246);
+    
 }
 
 .external-btn-blur {
@@ -954,9 +956,8 @@ text-align: center;
     }
 
     .arrows {
-        position: absolute;
-        width: 128px;
-        height: 25.53px;
+        width: 62px;
+        height: 29.53px;
         left: 155px;
         z-index: 90;
         top: 756px;
