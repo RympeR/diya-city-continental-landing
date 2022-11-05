@@ -1142,7 +1142,9 @@ text-align: center;
         margin-right: 0px;
         opacity: 0.6;
     }
-
+    .pb-left{
+        margin-right: 1em;
+    }
     .h3-convenience-last-card {
         margin-left: 15px;
         margin-right: 15px;
@@ -1248,7 +1250,7 @@ text-align: center;
     }
 
     .tech-m-block-1 {
-        position: absolute;
+        /* position: absolute; */
         width: 134.28px;
         height: 57px;
         left: 65px;
@@ -1256,7 +1258,7 @@ text-align: center;
     }
 
     .tech-m-block-2 {
-        position: absolute;
+        /* position: absolute; */
         width: 128.85px;
         height: 57.76px;
         left: 213.15px;
@@ -1264,7 +1266,7 @@ text-align: center;
     }
 
     .tech-m-block-3 {
-        position: absolute;
+        /* position: absolute; */
         width: 143.23px;
         height: 57px;
         left: 65px;
@@ -1273,7 +1275,7 @@ text-align: center;
 
 
     .tech-m-block-4 {
-        position: absolute;
+        /* position: absolute; */
         width: 121.23px;
         height: 55.84px;
         left: 220.77px;
@@ -1281,7 +1283,7 @@ text-align: center;
     }
 
     .tech-m-block-5 {
-        position: absolute;
+        /* position: absolute; */
         width: 128.07px;
         height: 57px;
         left: 65px;
@@ -1289,7 +1291,7 @@ text-align: center;
     }
 
     .tech-m-block-6 {
-        position: absolute;
+        /* position: absolute; */
         width: 136.45999999999998px;
         height: 57px;
         left: 205.54px;
@@ -1297,7 +1299,7 @@ text-align: center;
     }
 
     .tech-m-block-7 {
-        position: absolute;
+        /* position: absolute; */
         width: 121.03px;
         height: 57px;
         left: 65px;
@@ -1305,7 +1307,7 @@ text-align: center;
     }
 
     .tech-m-block-8 {
-        position: absolute;
+        /* position: absolute; */
         width: 142px;
         height: 57px;
         left: 200px;
@@ -1313,7 +1315,7 @@ text-align: center;
     }
 
     .tech-m-block-9 {
-        position: absolute;
+        /* position: absolute; */
         width: 144px;
         height: 57px;
         left: 65px;
@@ -1321,7 +1323,7 @@ text-align: center;
     }
 
     .tech-m-block-10 {
-        position: absolute;
+        /* position: absolute; */
         width: 119.33px;
         height: 57px;
         left: 221.67px;
@@ -1330,7 +1332,7 @@ text-align: center;
     }
 
     .tech-m-block-11 {
-        position: absolute;
+        /* position: absolute; */
         width: 154px;
         height: 57px;
         left: 65px;
@@ -1339,7 +1341,7 @@ text-align: center;
     }
 
     .tech-m-block-12 {
-        position: absolute;
+        /* position: absolute; */
         width: 111.52px;
         height: 57px;
         left: 231.48px;
