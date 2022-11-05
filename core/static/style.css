@@ -922,7 +922,7 @@ text-align: center;
         width: 205px;
         height: 49px;
         left: 37px;
-        top: 518px;
+        top: 640px;
 
         background: linear-gradient(90deg, #030205 0%, #9306b9 100%);
         backdrop-filter: blur(15.2198px);
@@ -1013,7 +1013,7 @@ text-align: center;
     .diya-image {
         width: 72px;
         height: 35px;
-        position: absolute;
+        /* position: absolute; */
         width: 71.82px;
         height: 34.7px;
         left: 161.17px;
@@ -1027,7 +1027,7 @@ text-align: center;
         font-size: 24.0994px;
         line-height: 30px;
         /* identical to box height */
-        position: absolute;
+        /* position: absolute; */
         width: 97px;
         height: 30px;
         left: 98.21px;
@@ -1054,7 +1054,7 @@ text-align: center;
     .block-4 {
         min-height: 616px;
         max-width: 100%;
-        margin-bottom: -52px;
+        margin-bottom: -29px;
         box-sizing: content-box;
         background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/block-4-mobile.svg');
     }
@@ -1252,7 +1252,7 @@ text-align: center;
         width: 134.28px;
         height: 57px;
         left: 65px;
-        top: 3016.42px;
+        top: 3355.42px;
     }
 
     .tech-m-block-2 {
@@ -1260,7 +1260,7 @@ text-align: center;
         width: 128.85px;
         height: 57.76px;
         left: 213.15px;
-        top: 3016.42px;
+        top: 3355.42px;
     }
 
     .tech-m-block-3 {
@@ -1268,7 +1268,7 @@ text-align: center;
         width: 143.23px;
         height: 57px;
         left: 65px;
-        top: 3088px;
+        top: 3427px;
     }
 
 
@@ -1277,7 +1277,7 @@ text-align: center;
         width: 121.23px;
         height: 55.84px;
         left: 220.77px;
-        top: 3088px;
+        top: 3427px;
     }
 
     .tech-m-block-5 {
@@ -1285,7 +1285,7 @@ text-align: center;
         width: 128.07px;
         height: 57px;
         left: 65px;
-        top: 3160.68px;
+        top: 3499px;
     }
 
     .tech-m-block-6 {
@@ -1293,7 +1293,7 @@ text-align: center;
         width: 136.45999999999998px;
         height: 57px;
         left: 205.54px;
-        top: 3160.68px;
+        top: 3499px;
     }
 
     .tech-m-block-7 {
@@ -1301,7 +1301,7 @@ text-align: center;
         width: 121.03px;
         height: 57px;
         left: 65px;
-        top: 3232px;
+        top: 3571px;
     }
 
     .tech-m-block-8 {
@@ -1309,7 +1309,7 @@ text-align: center;
         width: 142px;
         height: 57px;
         left: 200px;
-        top: 3232px;
+        top: 3571px;
     }
 
     .tech-m-block-9 {
@@ -1317,7 +1317,7 @@ text-align: center;
         width: 144px;
         height: 57px;
         left: 65px;
-        top: 3304px;
+        top: 3643px;
     }
 
     .tech-m-block-10 {
@@ -1325,7 +1325,7 @@ text-align: center;
         width: 119.33px;
         height: 57px;
         left: 221.67px;
-        top: 3304px;
+        top: 3643px;
 
     }
 
@@ -1334,7 +1334,7 @@ text-align: center;
         width: 154px;
         height: 57px;
         left: 65px;
-        top: 3376px;
+        top: 3715px;
 
     }
 
@@ -1343,7 +1343,7 @@ text-align: center;
         width: 111.52px;
         height: 57px;
         left: 231.48px;
-        top: 3376px;
+        top: 3715px;
     }
 
     .convenience-h3 {
