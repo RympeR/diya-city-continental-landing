@@ -960,7 +960,8 @@ text-align: center;
         height: 29.53px;
         left: 155px;
         z-index: 90;
-        top: 756px;
+        top: 807px;
+        position: absolute;
     }
 
     .second-block {
@@ -1170,7 +1171,7 @@ text-align: center;
         /* Note: backdrop-filter has minimal browser support */
         border-radius: 11.0607px;
         /* padding: 22px 10% 22px 10%; */
-
+        /* margin-left: -1em; */
     }
 
     .purple-block-text {
@@ -1197,6 +1198,7 @@ text-align: center;
         height: 592px;
         width: 100%;
         box-sizing: content-box;
+        margin-left: -1em;
     }
 
     .eigth-block {
@@ -1571,75 +1573,63 @@ text-align: center;
 
 
     .paragraph-1 {
-        position: absolute;
-        left: 24px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 13px;
     }
 
     .paragraph-2 {
-        position: absolute;
-        left: 23px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 15px;
     }
 
     .paragraph-3 {
-        position: absolute;
-        left: 18px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 13px;
     }
 
     .paragraph-4 {
-        position: absolute;
-        left: 24px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 18px;
     }
 
     .paragraph-5 {
-        position: absolute;
-        left: 13px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 20px;
     }
 
     .paragraph-6 {
-        position: absolute;
-        left: 27px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 27px;
     }
 
     .paragraph-7 {
-        position: absolute;
-        left: 34px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 39px;
     }
 
     .paragraph-8 {
-        position: absolute;
-        left: 28px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 31px;
     }
 
     .paragraph-9 {
-        position: absolute;
-        left: 21px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 23px;
     }
 
     .paragraph-10 {
-        position: absolute;
-        left: 24px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 29px;
     }
 
     .paragraph-11 {
-        position: absolute;
-        left: 13px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 19px;
     }
 
     .paragraph-12 {
-        position: absolute;
-        left: 24px;
-        top: 20px;
+        padding-top: 19px;
+        padding-left: 29px;
     }
 
     .external-blur {
