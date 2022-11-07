@@ -766,6 +766,14 @@ text-align: center;
 }
 
 /* !! media 450 styles*/
+@media only screen and (min-width:1200px) and (max-width: 1500px) {
+    .first-block{
+        margin-top: -3rem;
+    }
+    .m-bot-10r {
+        margin-bottom: revert!important;
+    }
+}
 @media only screen and (min-width:601px) {
     .custom-digit-block{
         margin-left:  3.5rem;
