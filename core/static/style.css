@@ -104,7 +104,6 @@ textarea {
 }
 
 .first-block {
-    border-radius: 40px;
     background-color: #fff;
     z-index: 3;
     background-image: url('./images/Line-back.svg');
@@ -385,7 +384,7 @@ textarea {
     /* background: rgba(255, 255, 255, 0.27); */
     color: #FFFFFF;
     border-radius: 95px;
-    background: linear-gradient(90deg, #030205 0%, #9C5FFE 100%);
+    background: linear-gradient(10deg, #030205 0%, #663f89 100%);
     backdrop-filter: blur(15px);
     /* Note: backdrop-filter has minimal browser support */
     width: 164px;
