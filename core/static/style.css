@@ -967,6 +967,7 @@ text-align: center;
     .second-block {
         height: 140px;
         width: 100%;
+        margin-top: 0px;
     }
 
     .white-title {
@@ -992,13 +993,15 @@ text-align: center;
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 500;
-        font-size: 13.3996px;
+        font-size: 12px;
         line-height: 16px;
 
         color: rgba(255, 255, 255, 0.8);
 
     }
-
+    .mt-45-sm{
+        margin-top: 2rem!important;
+    }
     .convenience-h3-text {
         font-family: 'Gilroy';
         font-style: normal;
@@ -1370,7 +1373,7 @@ text-align: center;
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 600;
-        font-size: 53.1692px;
+        font-size: 36px;
         line-height: 65px;
         color: #FFFFFF;
     }
@@ -1383,6 +1386,16 @@ text-align: center;
         line-height: 9px;
         text-align: center;
         color: #FFFFFF;
+    }
+    .small-white-text-2 {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 9px;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.5;
     }
 
     .sup-text {
