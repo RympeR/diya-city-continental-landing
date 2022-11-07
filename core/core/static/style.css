@@ -146,7 +146,7 @@ textarea {
 .block-4 {
     background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/convience-bg.svg');
     min-height: 1042px;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
@@ -783,6 +783,20 @@ text-align: center;
         margin-right: -6.5rem;
         margin-left: -3rem;
     }
+    .block-4{
+        padding-bottom: 7em;
+
+    }
+}
+@media only screen and (min-width:1220px) and (max-width: 1380px) {
+    .no-mt-left{
+        margin-left: revert!important;
+    }
+}
+@media only screen and (min-width:1249px) and (max-width: 1250px) {
+    .no-mt-left{
+        margin-left: -56px!important;
+    }
 }
 @media only screen and (min-width:1200px) and (max-width: 1500px) {
     .first-block{
@@ -791,6 +805,7 @@ text-align: center;
     /* .m-bot-10r {
         margin-bottom: revert!important;
     } */
+
 }
 @media only screen and (min-width:601px) {
     .custom-digit-block{
@@ -800,7 +815,7 @@ text-align: center;
     .mb-l-none {
         display: none;
     }
-    
+
     .purple-block {
         padding-top: 45px;
         text-align: center;
