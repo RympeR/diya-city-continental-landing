@@ -1262,30 +1262,29 @@
 
                 </div>
             </div>
-            <div class="row d-flex ">
-                <div class="col-3 offset-2" style="margin-top: -3px;">
+            <div class="row d-flex justify-content-center">
+                <div class=" col-xxl-3 col-xl-4 offset-lg-1 col-lg-5 col-md-4" style="margin-top: -3px;">
                     <img class="copyright-image" src="{% static 'images/Copyright.svg' %}" alt="">
                 </div>
-                <div class="col-1 d-flex" style="margin-top: 2px;">
+                <div class="mail-block col-2" style="margin-top: 2px;">
                     <img class="copyright-image" src="{% static 'images/mdi_email.svg' %}" style="height:14px; width:14px" alt="">
                     <a href="mailto:info@itcontinental.pro" class="small-text pretify-link m-left-1r"
                         style="margin-top: 5px;">
                         info@itcontinental.pro
                     </a>
                 </div>
-                <div class="col-5 m-left-2r  d-flex">
-                    <img class="m-left-10r" src="{% static 'images/ci_location.svg' %}"  style="height:18px; width:18px"  alt="">
+                <div class="address-block  col-xxl-4 col-xl-4 col-lg-6 col-md-5 offset-lg-0 offset-md-1" style="">
+                    <img class="" src="{% static 'images/ci_location.svg' %}"  style="height:18px; width:18px"  alt="">
                     <a href="Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159"
-                        class="small-text pretify-link  m-left-1r" style="margin-top: 5px;">
+                        class="small-text pretify-link  m-left-05r" style="margin-top: 5px;">
                         {% if request.session.lang == 'eng' %}
                         Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159
                         {% else %}
-                        Україна м. Київ, вулиця Михайла Ломоносова, 73а, 03189 офіс 159
+                        Україна м. Київ, вул М. Ломоносова, 73а, 03189 офіс 159
                         {% endif %}
 
                     </a>
                 </div>
-                <div class="col-1"></div>
             </div>
             <div class="row d-flex pd-top-2r"></div>
         </div>

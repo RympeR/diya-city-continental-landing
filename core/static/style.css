@@ -112,6 +112,9 @@ textarea {
     min-height:900px;
 }
 
+.address-block{
+    /* width: 33%; */
+}
 .navigation-block {
     justify-content: space-around;
 }
@@ -171,6 +174,7 @@ textarea {
     background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.6) 100%), url('./images/block-8-9-bg.svg');
     background-size: 101%;
     background-repeat: no-repeat;
+    background-size: cover;
     /* min-height: 1440px; */
 }
 
@@ -537,7 +541,7 @@ textarea {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 15px;
     /* identical to box height */
 
@@ -765,14 +769,29 @@ text-align: center;
     }
 }
 
+.footer-block{
+    width: 370px;
+}
+.m-left-05r{
+    margin-left: 0.5rem!important;
+}
 /* !! media 450 styles*/
+@media only screen and (min-width:1250px) {
+    .big-margin-5{
+        margin-left:5%
+    }
+    .address-block {
+        margin-right: -6.5rem;
+        margin-left: -3rem;
+    }
+}
 @media only screen and (min-width:1200px) and (max-width: 1500px) {
     .first-block{
         margin-top: -3rem;
     }
-    .m-bot-10r {
+    /* .m-bot-10r {
         margin-bottom: revert!important;
-    }
+    } */
 }
 @media only screen and (min-width:601px) {
     .custom-digit-block{
@@ -829,6 +848,9 @@ text-align: center;
     }
 }
 @media only screen and (min-width:601px) and (max-width:1220px) {
+    .mail-block{
+        display: none;
+    }
     .card {
         font-size: 12px;
         margin-left: 5px;
