@@ -835,7 +835,7 @@ html {
     }
 }
 
-@media only screen and (min-width:1200px) and (max-width: 1500px) {
+@media only screen and (min-width:1000px) and (max-width: 1700px) {
     .first-block {
         margin-top: -3rem;
     }
