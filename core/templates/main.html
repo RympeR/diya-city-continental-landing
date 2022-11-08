@@ -76,7 +76,7 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <div class="rod d-flex flex-column justify-content-center text-center">
-                                <a class='anchor-text text-dark mobile-menu-item mb-3 mt-3 mobile-menu-item' href=""  data-bs-dismiss="modal">
+                                <a class='anchor-text text-dark mobile-menu-item mb-3 mt-3 mobile-menu-item mobile-link' href="" >
                                     {% if request.session.lang == 'eng' %}
                                     HOME
                                     {% else %}
@@ -84,7 +84,7 @@
                                     {% endif %}
                                 </a>
                                 <span class='sep'></span>
-                                <a class='opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item' href="#about"  data-bs-dismiss="modal">
+                                <a class='opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item mobile-link' href="#about">
                                     {% if request.session.lang == 'eng' %}
                                     ABOUT iC
                                     {% else %}
@@ -92,7 +92,7 @@
                                     {% endif %}
                                 </a>
                                 <span class='sep'></span>
-                                <a class=' opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item' href="#services"  data-bs-dismiss="modal">
+                                <a class=' opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item mobile-link' href="#services">
                                     {% if request.session.lang == 'eng' %}
                                     SERVICES
                                     {% else %}
@@ -100,7 +100,7 @@
                                     {% endif %}
                                 </a>
                                 <span class='sep'></span>
-                                <a class=' opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item' href="#contact"  data-bs-dismiss="modal">
+                                <a class=' opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item mobile-link' href="#contact">
                                     {% if request.session.lang == 'eng' %}
                                     CONTACT
                                     {% else %}
@@ -1228,7 +1228,7 @@
                 </p>
             </div>
         </div>
-        <div class="external-blur" style="margin-top: 3rem; padding-top: 5rem;">
+        <div class="external-blur" style="margin-top: 3rem; padding-top: 5rem;" id="contact">
 
             <div class=" justify-content-center d-flex">
                 <img class="" src="{% static 'images/footer-big-logo.svg' %}" width="217" height="50" alt="">
@@ -1401,8 +1401,30 @@
             document.getElementById('uk-lang').classList.add('disabled-lang')
         })()
     }
+    function removeElementsByClass(className){
+        const elements = document.getElementsByClassName(className);
+        while(elements.length > 0){
+            elements[0].parentNode.removeChild(elements[0]);
+        }
+    }
     $('#menu-modal').on('shown.bs.modal', function () {
         $(".modal-backdrop.in").hide();
+     })
+     $('.mobile-link').on('click', function(e){
+        var div = document.getElementById("menu-modal");
+        if (div.classList.contains("show")) {
+            div.classList.remove("show");
+            div.style['display'] = "none";
+            $(".modal-backdrop.in").hide();
+            el = document.getElementsByTagName("body")[0];
+            el.classList.remove("modal-open");
+            el.style = ""
+            div.setAttribute('aria-hidden', 'true')
+            div.removeAttribute('aria-modal')
+            div.removeAttribute('role')
+            removeElementsByClass('modal-backdrop')
+            document.querySelector('.navbar-btn-toggler').click()
+        }
      })
 </script>
 
