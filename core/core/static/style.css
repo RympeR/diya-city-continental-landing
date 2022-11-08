@@ -19,6 +19,9 @@ textarea {
     resize: none;
 }
 
+html{
+    position: --webkit-sticky;
+}
 /*!!custom layout styles*/
 
 .pd-top-7r {
@@ -557,8 +560,8 @@ textarea {
     margin-bottom: 50px;
     border-radius: 30px;
     text-align: center;
-    border: 1px solid #FFFFFF;
-    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #ffffff69;
+    background: rgba(255, 255, 255, 0.246);
 
     opacity: 0.88;
     width: 296px;
@@ -774,6 +777,26 @@ text-align: center;
 .m-left-05r{
     margin-left: 0.5rem!important;
 }
+.bigPurple-block{
+    height: 792px;
+    width: 734px;
+    background: url('./images/bigPurple.svg');
+    margin-right:-9.5rem;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+}
+
+
+/* opacity: 0.2;
+        width: 190px;
+        height: 651px;
+        position: absolute;
+        left: 53%;
+        top: 3%;
+        object-fit: cover;
+        z-index: 0;
+        object-position: 19% 0; */
 /* !! media 450 styles*/
 @media only screen and (min-width:1250px) {
     .big-margin-5{
