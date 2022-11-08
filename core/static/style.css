@@ -1042,7 +1042,7 @@ html {
 
     .first-block {
         border-radius: 0px;
-        height: 686px;
+        min-height: 850px;
         width: 100%;
         margin-top: -3rem;
         background-image: none;
@@ -1051,9 +1051,9 @@ html {
     .arrows {
         width: 62px;
         height: 29.53px;
-        left: 155px;
+        left: 44%;
         z-index: 90;
-        top: 907px;
+        top: 867px;
         position: absolute;
     }
 
