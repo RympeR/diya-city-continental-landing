@@ -62,8 +62,65 @@
             <div class="col-3 d-flex justify-content-end mb-d-none" style="margin-top: 10px;">
                 <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark"
                     id="uk-lang">UA</button>
-                <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark" style="margin-left: -18px;"
-                    id="en-lang">EN</button>
+                <button type="button" class="btn btn-outline-none mb-d-none anchor-text text-dark"
+                    style="margin-left: -18px;" id="en-lang">EN</button>
+            </div>
+            <div class="mb-l-none" >
+                <button class="navbar-btn-toggler" data-bs-toggle="modal" data-bs-target="#menu-modal">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="menu-modal"  tabindex="-1" class="modal  modal-sm mb-l-none"  aria-labelledby="menu-modal" aria-hidden="true">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="rod d-flex flex-column justify-content-center text-center">
+                                <a class='anchor-text text-dark mobile-menu-item mb-3 mt-3 mobile-menu-item' href=""  data-bs-dismiss="modal">
+                                    {% if request.session.lang == 'eng' %}
+                                    HOME
+                                    {% else %}
+                                    ГОЛОВНА
+                                    {% endif %}
+                                </a>
+                                <span class='sep'></span>
+                                <a class='opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item' href="#about"  data-bs-dismiss="modal">
+                                    {% if request.session.lang == 'eng' %}
+                                    ABOUT iC
+                                    {% else %}
+                                    ПРО iС
+                                    {% endif %}
+                                </a>
+                                <span class='sep'></span>
+                                <a class=' opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item' href="#services"  data-bs-dismiss="modal">
+                                    {% if request.session.lang == 'eng' %}
+                                    SERVICES
+                                    {% else %}
+                                    СЕРВІСИ
+                                    {% endif %}
+                                </a>
+                                <span class='sep'></span>
+                                <a class=' opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item' href="#contact"  data-bs-dismiss="modal">
+                                    {% if request.session.lang == 'eng' %}
+                                    CONTACT
+                                    {% else %}
+                                    КОНТАКТИ
+                                    {% endif %}
+                
+                                </a>
+                                <span class='sep'></span>
+
+                                <div class="d-flex row flex-row mt-3">
+                                    <button onClick="ukLang()" type="button" class="col-4 btn btn-outline-none anchor-text text-dark" 
+                                    style="margin-left: 51px;" id="uk-lang" data-bs-dismiss="modal" >UA</button>
+                                    <button onClick="enLang()"  type="button" class="col-4 btn btn-outline-none anchor-text text-dark"
+                                            style="margin-left: -38px;" id="en-lang" data-bs-dismiss="modal">EN</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
         <div class="row mb-d-none">
@@ -103,15 +160,16 @@
                 </p>
                 <a class='write-btn btn anchor-text' style="color:white!important; padding-top:10px;margin-left: 0px;"
                     href="#contact">
-                            {% if request.session.lang == 'eng' %}
-                            Write
-                            {% else %}
-                            Написати
-                            {% endif %}
+                    {% if request.session.lang == 'eng' %}
+                    Write
+                    {% else %}
+                    Написати
+                    {% endif %}
                 </a>
             </div>
             <div class="col-5 mb-d-none hide-overflow-x">
-                <img src="{% static 'images/BigPurple1.svg' %}" class="big-purple hide-overflow-x" style="margin-left:-17%; height:816px" alt="big-purple">
+                <img src="{% static 'images/BigPurple1.svg' %}" class="big-purple hide-overflow-x"
+                    style="margin-left:-17%; height:816px" alt="big-purple">
             </div>
         </div>
         <div class="row mt-5 mb-l-none">
@@ -152,11 +210,11 @@
                 </p>
                 <a class='write-btn btn anchor-text' style="color:white!important; padding-top:16px;margin-left: 0px;"
                     href="#contact">
-                            {% if request.session.lang == 'eng' %}
-                            Write
-                            {% else %}
-                            Написати
-                            {% endif %}
+                    {% if request.session.lang == 'eng' %}
+                    Write
+                    {% else %}
+                    Написати
+                    {% endif %}
                 </a>
             </div>
             <div class="col-5 mb-l-none">
@@ -164,10 +222,10 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center">
-                <img src="{% static 'images/first-block-arrows.svg' %}" class="arrows" alt="big-purple">
+            <img src="{% static 'images/first-block-arrows.svg' %}" class="arrows" alt="big-purple">
         </div>
     </div>
-    <div class="container-fluid second-block"  id="about">
+    <div class="container-fluid second-block" id="about">
         <div class="row">
             <div class="col-12 mt-45-sm mt-lg-5 mt-md-5 mt-sm-5 d-flex justify-content-center align-items-center">
                 <h2 class="white-title white-title-mobile mt-lg-5">
@@ -614,7 +672,7 @@
         </div>
     </div>
 
-    <div class="container-fluid fith-block mb-d-none"   id="services">
+    <div class="container-fluid fith-block mb-d-none" id="services">
         <div class="row">
             <div class="col-10 offset-1 d-flex justify-content-center">
                 <div class="purple-block-white">
@@ -709,177 +767,9 @@
         </div>
     </div>
     {% if request.session.lang == 'eng' %}
-    <div class="container-fluid fith-block mb-l-none"  id="services">
-        <!-- <div class="row">
-            <div class="col-11 offset-1 ">
-                <h1 class="text-title-black mt-5 " style="top: 124rem;">Technologies</h1>
-            </div>
-        </div>
-        <div class="d-flex tech-m row-tech-m" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Virtualization
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Dev-Ops
-                    </p>
-                </div>
-        </div>
-        <div class="d-flex mt-3" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Cloud Migrations
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Agri Tech
-                    </p>
-                </div>
-        </div>
-        <div class="d-flex mt-3" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Fin Tech
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Deep Tech
-                    </p>
-                </div>
-        </div>
-        <div class="d-flex mt-3" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        App Optimize
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Cloud Platform
-                    </p>
-                </div>
-        </div>
-        <div class="d-flex mt-3" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Automation Software
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Internet Things
-                    </p>
-                </div>
-        </div>
-        <div class="d-flex mt-3" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Data Ops
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Ai
-                    </p>
-                </div>
-        </div> -->
-    </div>
+    <div class="container-fluid fith-block mb-l-none" id="services"></div>
     {% else %}
-    <div class="container-fluid fith-block-ukr mb-l-none">
-        <!-- <div class="row">
-            <div class="col-11 offset-1 ">
-                <h1 class="text-title-black mt-5 " style="top: 124rem;">Technologies</h1>
-            </div>
-        </div>
-        <div class="d-flex tech-m row-tech-m" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Virtualization
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Dev-Ops
-                    </p>
-                </div>
-        </div>
-        <div class="d-flex mt-3" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Cloud Migrations
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Agri Tech
-                    </p>
-                </div>
-        </div>
-        <div class="d-flex mt-3" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Fin Tech
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Deep Tech
-                    </p>
-                </div>
-        </div>
-        <div class="d-flex mt-3" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        App Optimize
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Cloud Platform
-                    </p>
-                </div>
-        </div>
-        <div class="d-flex mt-3" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Automation Software
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Internet Things
-                    </p>
-                </div>
-        </div>
-        <div class="d-flex mt-3" 
-            style="justify-content: space-evenly;">
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Data Ops
-                    </p>
-                </div>
-                <div class="purple-block-mobile">
-                    <p class="white-text purple-block-text">
-                        Ai
-                    </p>
-                </div>
-        </div> -->
-    </div>
+    <div class="container-fluid fith-block-ukr mb-l-none" id="services"></div>
     {% endif %}
 
 
@@ -1263,18 +1153,20 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class=" col-xxl-3 col-xl-4 offset-xxl-0 offset-lg-1 col-lg-5 col-md-4 no-mt-left" style="margin-top: -3px;">
+                <div class=" col-xxl-3 col-xl-4 offset-xxl-0 offset-lg-1 col-lg-5 col-md-4 no-mt-left"
+                    style="margin-top: -3px;">
                     <img class="copyright-image" src="{% static 'images/Copyright.svg' %}" alt="">
                 </div>
                 <div class="mail-block col-2" style="margin-top: 2px;">
-                    <img class="copyright-image" src="{% static 'images/mdi_email.svg' %}" style="height:14px; width:14px" alt="">
+                    <img class="copyright-image" src="{% static 'images/mdi_email.svg' %}"
+                        style="height:14px; width:14px" alt="">
                     <a href="mailto:info@itcontinental.pro" class="small-text pretify-link m-left-1r"
                         style="margin-top: 5px;">
                         info@itcontinental.pro
                     </a>
                 </div>
                 <div class="address-block  col-xxl-4 col-xl-4 col-lg-6 col-md-5 offset-lg-0 offset-md-1" style="">
-                    <img class="" src="{% static 'images/ci_location.svg' %}"  style="height:18px; width:18px"  alt="">
+                    <img class="" src="{% static 'images/ci_location.svg' %}" style="height:18px; width:18px" alt="">
                     <a href="Ukraine, Kyiv city, St. Mykhailo Lomonosova Street, 73a, 03189 office 159"
                         class="small-text pretify-link  m-left-05r" style="margin-top: 5px;">
                         {% if request.session.lang == 'eng' %}
@@ -1291,7 +1183,8 @@
 
     </div>
     <div class="container-fluid eigth-block mb-l-none" id="contact">
-        <h1 class="white-title d-flex justify-content-center" style="padding-top: 3rem;padding-bottom: 2rem;line-height:18px;">
+        <h1 class="white-title d-flex justify-content-center"
+            style="padding-top: 3rem;padding-bottom: 2rem;line-height:18px;">
             {% if request.session.lang == 'eng' %}
             Industries
             {% else %}
@@ -1439,12 +1332,41 @@
     function clickNav() {
         $('.animated-icon2').classList.toggle('open');
     }
+    function enLang() {
+        $.ajax({
+
+            url: "{% url 'en' %}",
+            type: "get",
+            success: function (result) {
+                localStorage.lang = 'en'
+                console.log(result);
+                window.location.href = '/'
+            },
+            error: function (result) {
+                console.log(result, "location is bad");
+            },
+        });
+    }
+    function ukLang() {
+        $.ajax({
+            url: "{% url 'uk' %}",
+            type: "get",
+            success: function (result) {
+                localStorage.lang = 'uk'
+                window.location.href = '/'
+                console.log(result);
+            },
+            error: function (result) {
+                console.log(result, "location is bad");
+            },
+        });
+    }
     $("#uk-lang").click(function () {
         $.ajax({
             url: "{% url 'uk' %}",
             type: "get",
             success: function (result) {
-                localStorage.lang ='uk'
+                localStorage.lang = 'uk'
                 window.location.href = '/'
                 console.log(result);
             },
@@ -1455,11 +1377,11 @@
     });
     $("#en-lang").click(function () {
         $.ajax({
-            
+
             url: "{% url 'en' %}",
             type: "get",
             success: function (result) {
-                localStorage.lang ='en'
+                localStorage.lang = 'en'
                 console.log(result);
                 window.location.href = '/'
             },
@@ -1469,16 +1391,19 @@
         });
     });
     if (!localStorage.lang || localStorage.lang == 'uk') {
-        (()=>{
+        (() => {
             document.getElementById('en-lang').classList.add('disabled-lang')
             document.getElementById('uk-lang').classList.remove('disabled-lang')
         })()
     } else {
-        (()=>{
+        (() => {
             document.getElementById('en-lang').classList.remove('disabled-lang')
             document.getElementById('uk-lang').classList.add('disabled-lang')
         })()
     }
+    $('#menu-modal').on('shown.bs.modal', function () {
+        $(".modal-backdrop.in").hide();
+     })
 </script>
 
 </html>

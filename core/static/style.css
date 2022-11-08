@@ -671,9 +671,11 @@ html {
     background-size: 100%;
     border-radius: 25px 25px 0px 0px;
 }
-.hide-overflow-x{
+
+.hide-overflow-x {
     overflow-x: hidden;
 }
+
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
     @supports (-webkit-appearance:none) and (stroke-color:transparent) {
 
@@ -1156,6 +1158,48 @@ html {
         margin-bottom: -44px;
         box-sizing: content-box;
         background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.59) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.59) 100%), url('./images/block-4-mobile.svg');
+    }
+
+    .sep {
+        width: 87px;
+        height: 0px;
+        margin-left: 4rem;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-btn-toggler {
+        position: absolute;
+        left: 69%;
+        top: 12%;
+        z-index: 2;
+    }
+
+    .modal-dialog {
+        margin-left: 6rem;
+        margin-top: 9rem;
+    }
+
+    .modal-content {
+        width: 256px;
+        height: 325px;
+
+        background: rgba(255, 255, 255);
+        box-shadow: -1px 5px 20px rgba(0, 0, 0, 0.25);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 21px;
+    }
+    .modal-backdrop {
+        background-color: transparent;
+     }
+    .mobile-menu-item {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
     }
 
     .convenience-h3-text {
@@ -1753,9 +1797,11 @@ html {
         backdrop-filter: none !important;
 
     }
-    .text-center{
+
+    .text-center {
         text-align: center;
     }
+
     .big-purple {
         opacity: 0.2;
         width: 190px;
