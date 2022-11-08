@@ -1745,13 +1745,17 @@ html {
 
     .external-blur {
         backdrop-filter: none !important;
+        background-size: cover;
+        padding-bottom: 1rem;
     }
 
     .pretify-input {
         backdrop-filter: none !important;
 
     }
-
+    .text-center{
+        text-align: center;
+    }
     .big-purple {
         opacity: 0.2;
         width: 190px;
@@ -1767,13 +1771,12 @@ html {
     .mail-image {
         height: 14px;
         width: 14px;
-        margin-top: 5px;
     }
 
     .location-image {
         height: 20px;
         width: 41px;
-        margin-top: 5px;
+        /* margin-top: 5px; */
 
     }
 }
