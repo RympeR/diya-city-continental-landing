@@ -92,7 +92,7 @@
                                     {% endif %}
                                 </a>
                                 <span class='sep'></span>
-                                <a class=' opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item mobile-link' href="#services">
+                                <a class=' opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item mobile-link' href="#service">
                                     {% if request.session.lang == 'eng' %}
                                     SERVICES
                                     {% else %}
@@ -100,7 +100,7 @@
                                     {% endif %}
                                 </a>
                                 <span class='sep'></span>
-                                <a class=' opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item mobile-link' href="#contact">
+                                <a class=' opacity-03 anchor-text text-dark mb-3 mt-3 mobile-menu-item mobile-link' href="#contacts">
                                     {% if request.session.lang == 'eng' %}
                                     CONTACT
                                     {% else %}
@@ -209,7 +209,7 @@
 
                 </p>
                 <a class='write-btn btn anchor-text' style="color:white!important; padding-top:16px;margin-left: 0px;"
-                    href="#contact">
+                    href="#contacts">
                     {% if request.session.lang == 'eng' %}
                     Write
                     {% else %}
@@ -767,9 +767,9 @@
         </div>
     </div>
     {% if request.session.lang == 'eng' %}
-    <div class="container-fluid fith-block mb-l-none" id="services"></div>
+    <div class="container-fluid fith-block mb-l-none" id="service"></div>
     {% else %}
-    <div class="container-fluid fith-block-ukr mb-l-none" id="services"></div>
+    <div class="container-fluid fith-block-ukr mb-l-none" id="service"></div>
     {% endif %}
 
 
@@ -1228,7 +1228,7 @@
                 </p>
             </div>
         </div>
-        <div class="external-blur" style="margin-top: 3rem; padding-top: 5rem;" id="contact">
+        <div class="external-blur" style="margin-top: 3rem; padding-top: 5rem;" id="contacts">
 
             <div class=" justify-content-center d-flex">
                 <img class="" src="{% static 'images/footer-big-logo.svg' %}" width="217" height="50" alt="">
