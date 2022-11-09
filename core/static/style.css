@@ -153,7 +153,7 @@ html {
 .copy-block{
     margin-top: -3px;
     position: absolute;
-    left: 8.2rem;
+    left: 9.2%;
 }
 
 
@@ -418,7 +418,7 @@ html {
     /* background: rgba(255, 255, 255, 0.27); */
     color: #FFFFFF;
     border-radius: 95px;
-    background: linear-gradient(10deg, #030205 0%, #663f89 100%);
+    background: linear-gradient(90deg, #030205 0%, #663f89 100%);
     backdrop-filter: blur(15px);
     /* Note: backdrop-filter has minimal browser support */
     width: 164px;
@@ -426,7 +426,7 @@ html {
     border-radius: 95px;
     backdrop-filter: blur(41.5px);
     /* background:url('../images/write.svg') no-repeat; */
-    box-shadow: 0px 6px rgba(0, 0, 0, 0.246);
+    /* box-shadow: 0px 6px rgba(0, 0, 0, 0.246); */
 
 }
 
@@ -706,9 +706,11 @@ html {
 .mail-block{
     margin-top: 2px;
     position: absolute;
-    left: 43%;
+    left: 45%;
 }
-
+.anchor-text:hover{
+    animation: none;
+}
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
     @supports (-webkit-appearance:none) and (stroke-color:transparent) {
 
@@ -860,7 +862,7 @@ html {
 
     .address-block {
         margin-right: -6.5rem;
-        margin-left: -3rem;
+        margin-left: 2%;
     }
 
     .block-4 {
