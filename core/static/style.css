@@ -17,6 +17,23 @@ body {
 
 textarea {
     resize: none;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.0493px;
+    line-height: 17px;
+
+    color: rgba(255, 255, 255, 0.2);
+}
+
+input[type="text"] {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.0493px;
+    line-height: 17px;
+
+    color: rgba(255, 255, 255, 0.2);
 }
 
 html {
@@ -117,6 +134,8 @@ html {
 
 .address-block {
     /* width: 33%; */
+    position: absolute;
+    right: 10em;
 }
 
 .navigation-block {
@@ -130,6 +149,14 @@ html {
     margin-right: 2px;
     outline: 0ch;
 }
+
+.copy-block{
+    margin-top: -3px;
+    position: absolute;
+    left: 8.2rem;
+}
+
+
 
 .second-block {
     height: 260px;
@@ -676,6 +703,11 @@ html {
     overflow-x: hidden;
 }
 
+.mail-block{
+    margin-top: 2px;
+    position: absolute;
+}
+
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
     @supports (-webkit-appearance:none) and (stroke-color:transparent) {
 
@@ -808,6 +840,17 @@ html {
         object-fit: cover;
         z-index: 0;
         object-position: 19% 0; */
+@media only screen and (min-width:1420px) {
+    .mail-block{
+        display: none;
+    }
+    .address-block{
+        display: none;
+    }
+    .copy-block{
+        left: 37%;
+    }
+}
 /* !! media 450 styles*/
 @media only screen and (min-width:1250px) {
     .big-margin-5 {
@@ -1189,9 +1232,11 @@ html {
 
         border-radius: 21px;
     }
+
     .modal-backdrop {
         background-color: transparent;
-     }
+    }
+
     .mobile-menu-item {
         font-family: 'Gilroy';
         font-style: normal;
