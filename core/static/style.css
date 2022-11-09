@@ -135,7 +135,7 @@ html {
 .address-block {
     /* width: 33%; */
     position: absolute;
-    right: 10em;
+    left: 66.5%;
 }
 
 .navigation-block {
@@ -706,6 +706,7 @@ html {
 .mail-block{
     margin-top: 2px;
     position: absolute;
+    left: 43%;
 }
 
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
