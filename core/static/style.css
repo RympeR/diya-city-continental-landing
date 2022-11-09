@@ -840,7 +840,7 @@ html {
         object-fit: cover;
         z-index: 0;
         object-position: 19% 0; */
-@media only screen and (min-width:1420px) {
+@media only screen and (max-width:1420px) {
     .mail-block{
         display: none;
     }
