@@ -1158,6 +1158,7 @@ html {
     }
 
     .diya-image {
+        margin-top: -7px;
         width: 72px;
         height: 35px;
         /* position: absolute; */
