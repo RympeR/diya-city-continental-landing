@@ -1200,7 +1200,7 @@ html {
     }
 
     .block-4 {
-        min-height: 616px;
+        min-height: 660px;
         max-width: 100%;
         margin-bottom: -44px;
         box-sizing: content-box;
@@ -1252,6 +1252,7 @@ html {
     }
 
     .convenience-h3-text {
+        padding-top: 7rem;
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 600;
