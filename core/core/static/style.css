@@ -1253,13 +1253,14 @@ html {
     }
 
     .convenience-h3-text {
-        padding-top: 7rem;
+        padding-top: 1rem;
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 600;
         font-size: 30.1491px;
         line-height: 37px;
         color: #FFFFFF;
+        margin-bottom: 5px;
         margin: -5rem auto 1rem auto;
     }
 
