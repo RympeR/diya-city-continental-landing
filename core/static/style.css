@@ -1219,7 +1219,7 @@ html {
     .navbar-btn-toggler {
         position: absolute;
         left: 85%;
-        top: 104px;
+        top: 100px;
         z-index: 2;
     }
 
