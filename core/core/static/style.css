@@ -1064,7 +1064,7 @@ html {
         width: 205px;
         height: 49px;
         left: 37px;
-        top: 640px;
+        top: 594px;
 
         background: linear-gradient(90deg, #030205 0%, #9306b9 100%);
         backdrop-filter: blur(15.2198px);
@@ -1091,7 +1091,7 @@ html {
 
     .first-block {
         border-radius: 0px;
-        min-height: 850px;
+        min-height: 800px;
         width: 100%;
         margin-top: -3rem;
         background-image: none;
@@ -1102,7 +1102,7 @@ html {
         height: 29.53px;
         left: 44%;
         z-index: 90;
-        top: 867px;
+        top: 802px;
         position: absolute;
     }
 
@@ -1135,7 +1135,7 @@ html {
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 16px;
 
         color: rgba(255, 255, 255, 0.8);
@@ -1173,7 +1173,7 @@ html {
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 600;
-        font-size: 24.0994px;
+        font-size: 27.0994px;
         line-height: 30px;
         /* identical to box height */
         /* position: absolute; */
@@ -1187,8 +1187,8 @@ html {
 
     .header-logo {
         position: absolute;
-        width: 225px;
-        height: 37.21px;
+        width: 208px;
+        height: 29.21px;
         left: 39px;
         top: 63px;
     }
@@ -1326,8 +1326,8 @@ html {
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 300;
-        font-size: 8px;
-        line-height: 8px;
+        font-size: 9px;
+        line-height: 9px;
         text-align: center;
 
         color: #FFFFFF;
@@ -1559,7 +1559,7 @@ html {
         font-size: 17px;
         line-height: 21px;
         /* identical to box height */
-
+        margin-top: -10px;
 
         color: #FFFFFF;
     }
@@ -1588,7 +1588,7 @@ html {
         font-style: normal;
         font-weight: 300;
         font-size: 12px;
-        line-height: 9px;
+        line-height: 13px;
         text-align: center;
         color: #FFFFFF;
         opacity: 0.5;
@@ -1862,10 +1862,10 @@ html {
         height: 651px;
         position: absolute;
         left: 53%;
-        top: 3%;
+        top: 1%;
         object-fit: cover;
         z-index: 0;
-        object-position: 19% 0;
+        object-position: 26% 0;
     }
 
     .mail-image {
