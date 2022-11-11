@@ -1189,8 +1189,8 @@ html {
         position: absolute;
         width: 208px;
         height: 29.21px;
-        left: 39px;
-        top: 63px;
+        left: 25px;
+        top: 36px;
     }
 
     .third-block {
@@ -1219,7 +1219,7 @@ html {
     .navbar-btn-toggler {
         position: absolute;
         left: 85%;
-        top: 100px;
+        top: 69px;
         z-index: 2;
     }
 
