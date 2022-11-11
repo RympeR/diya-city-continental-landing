@@ -1091,7 +1091,7 @@ html {
 
     .first-block {
         border-radius: 0px;
-        min-height: 800px;
+        min-height: 82  0px;
         width: 100%;
         margin-top: -3rem;
         background-image: none;
@@ -1231,18 +1231,22 @@ html {
     .modal-content {
         width: 256px;
         height: 325px;
-
+        margin-left: 16px;
         background: rgba(255, 255, 255);
         box-shadow: -1px 5px 20px rgba(0, 0, 0, 0.25);
         /* Note: backdrop-filter has minimal browser support */
 
         border-radius: 21px;
     }
-
+    .pretify-link {
+        font-size: 13px;
+    }
     .modal-backdrop {
         background-color: transparent;
     }
-
+    .small-mobile{
+        font-size: 12px;
+    }
     .mobile-menu-item {
         font-family: 'Gilroy';
         font-style: normal;
@@ -1282,7 +1286,7 @@ html {
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 600;
-        font-size: 9px;
+        font-size: 12px;
         line-height: 11px;
         color: #FFFFFF;
     }
