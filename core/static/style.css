@@ -150,7 +150,7 @@ html {
     outline: 0ch;
 }
 
-.copy-block{
+.copy-block {
     margin-top: -3px;
     position: absolute;
     left: 9.2%;
@@ -704,14 +704,16 @@ html {
     overflow-x: hidden;
 }
 
-.mail-block{
+.mail-block {
     margin-top: 2px;
     position: absolute;
     left: 45%;
 }
-.anchor-text:hover{
+
+.anchor-text:hover {
     animation: none;
 }
+
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
     @supports (-webkit-appearance:none) and (stroke-color:transparent) {
 
@@ -845,16 +847,19 @@ html {
         z-index: 0;
         object-position: 19% 0; */
 @media only screen and (max-width:1420px) {
-    .mail-block{
+    .mail-block {
         display: none;
     }
-    .address-block{
+
+    .address-block {
         display: none;
     }
-    .copy-block{
+
+    .copy-block {
         left: 37%;
     }
 }
+
 /* !! media 450 styles*/
 @media only screen and (min-width:1250px) {
     .big-margin-5 {
@@ -1238,15 +1243,19 @@ html {
 
         border-radius: 21px;
     }
+
     .pretify-link {
         font-size: 13px;
     }
+
     .modal-backdrop {
         background-color: transparent;
     }
-    .small-mobile{
+
+    .small-mobile {
         font-size: 12px;
     }
+
     .mobile-menu-item {
         font-family: 'Gilroy';
         font-style: normal;
@@ -1451,9 +1460,11 @@ html {
         background: url('./images/tecnologies-bg-ukr.svg');
         background-size: cover;
     }
-    .purple-block-mobile-tech{
+
+    .purple-block-mobile-tech {
         background: linear-gradient(0deg, rgba(46, 12, 63, 0.6), rgba(46, 12, 63, 0.6)), rgba(242, 88, 255, 0.15);
     }
+
     .tech-m-block-1 {
         /* position: absolute; */
         width: 134.28px;
