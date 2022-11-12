@@ -112,9 +112,9 @@
 
                                 <div class="d-flex row flex-row mt-3">
                                     <button onClick="ukLang()" type="button" class="col-4 btn btn-outline-none anchor-text text-dark" 
-                                    style="margin-left: 51px;" id="uk-lang" data-bs-dismiss="modal" >UA</button>
+                                    style="margin-left: 51px;" id="uk-lang-m" data-bs-dismiss="modal" >UA</button>
                                     <button onClick="enLang()"  type="button" class="col-4 btn btn-outline-none anchor-text text-dark"
-                                            style="margin-left: -38px;" id="en-lang" data-bs-dismiss="modal">EN</button>
+                                            style="margin-left: -38px;" id="en-lang-m" data-bs-dismiss="modal">EN</button>
                                 </div>
                             </div>
                         </div>
@@ -1470,15 +1470,48 @@
             },
         });
     });
+    $("#uk-lang-m").click(function () {
+        $.ajax({
+            url: "{% url 'uk' %}",
+            type: "get",
+            success: function (result) {
+                localStorage.lang = 'uk'
+                window.location.href = '/'
+                console.log(result);
+            },
+            error: function (result) {
+                console.log(result, "location is bad");
+            },
+        });
+    });
+    $("#en-lang-m").click(function () {
+        $.ajax({
+
+            url: "{% url 'en' %}",
+            type: "get",
+            success: function (result) {
+                localStorage.lang = 'en'
+                console.log(result);
+                window.location.href = '/'
+            },
+            error: function (result) {
+                console.log(result, "location is bad");
+            },
+        });
+    });
     if (!localStorage.lang || localStorage.lang == 'uk') {
         (() => {
             document.getElementById('en-lang').classList.add('disabled-lang')
             document.getElementById('uk-lang').classList.remove('disabled-lang')
+            document.getElementById('en-lang-m').classList.add('disabled-lang')
+            document.getElementById('uk-lang-m').classList.remove('disabled-lang')
         })()
     } else {
         (() => {
             document.getElementById('en-lang').classList.remove('disabled-lang')
             document.getElementById('uk-lang').classList.add('disabled-lang')
+            document.getElementById('en-lang-m').classList.remove('disabled-lang')
+            document.getElementById('uk-lang-m').classList.add('disabled-lang')
         })()
     }
     function removeElementsByClass(className){
