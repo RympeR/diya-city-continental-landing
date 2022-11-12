@@ -1195,7 +1195,7 @@ html {
         width: 208px;
         height: 29.21px;
         left: 25px;
-        top: 36px;
+        top: 31px;
     }
 
     .third-block {
@@ -1238,7 +1238,7 @@ html {
         height: 325px;
         margin-left: 22px;
         margin-top: -35px;
-        background: rgba(255, 255, 255);
+        background: url('./images/menu_back.svg');
         box-shadow: -1px 5px 20px rgba(0, 0, 0, 0.25);
         /* Note: backdrop-filter has minimal browser support */
 
