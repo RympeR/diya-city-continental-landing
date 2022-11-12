@@ -1238,7 +1238,7 @@ html {
         height: 325px;
         margin-left: 22px;
         margin-top: -35px;
-        background: url('./images/menu_back.svg');
+        background: rgba(255, 255, 255,1);
         background-size: cover;
         box-shadow: -1px 5px 20px rgba(0, 0, 0, 0.25);
         /* Note: backdrop-filter has minimal browser support */
