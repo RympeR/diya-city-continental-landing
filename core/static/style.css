@@ -1074,7 +1074,7 @@ html {
         background: linear-gradient(90deg, #030205 0%, #9306b9 100%);
         backdrop-filter: blur(15.2198px);
         /* Note: backdrop-filter has minimal browser support */
-
+        box-shadow: -1px 5px 20px rgba(0, 0, 0, 0.25);
         border-radius: 96.3924px;
     }
 
