@@ -1201,7 +1201,7 @@ html {
     }
 
     .block-4 {
-        min-height: 660px;
+        min-height: 700px;
         max-width: 100%;
         margin-bottom: -44px;
         box-sizing: content-box;
@@ -1441,8 +1441,9 @@ html {
 
     .fith-block {
         min-height: 580px;
-        background: url('./images/tecnologies-bg.svg');
-        background-size: cover;
+        background: #FFFFFF;
+        /* background: url('./images/tecnologies-bg.svg');
+        background-size: cover; */
     }
 
     .fith-block-ukr {
@@ -1450,7 +1451,9 @@ html {
         background: url('./images/tecnologies-bg-ukr.svg');
         background-size: cover;
     }
-
+    .purple-block-mobile-tech{
+        background: linear-gradient(0deg, rgba(46, 12, 63, 0.6), rgba(46, 12, 63, 0.6)), rgba(242, 88, 255, 0.15);
+    }
     .tech-m-block-1 {
         /* position: absolute; */
         width: 134.28px;

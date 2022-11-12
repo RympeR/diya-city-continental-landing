@@ -766,11 +766,95 @@
             </div>
         </div>
     </div>
-    {% if request.session.lang == 'eng' %}
-    <div class="container-fluid fith-block mb-l-none" id="service"></div>
-    {% else %}
+    <!-- {% if request.session.lang == 'eng' %} -->
+    <div class="container-fluid fith-block mb-l-none" id="service">
+        <div class="row">
+            <div class="col-11 offset-1 ">
+                <h1 class="black-title " style="margin-top: 2rem!important;     margin-bottom: 2rem;margin-left:2%;">
+                    {% if request.session.lang == 'eng' %}
+                    Technologies
+                    {% else %}
+                    Технології
+                    {% endif %}
+                </h1>
+            </div>
+        </div>
+        <div class="d-flex row justify-content-center">
+            <div class="purple-block-mobile pb-left tech-m-block-1 col-6">
+                <p class="white-text purple-block-text paragraph-1">
+                    Virtualization
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-2 col-6">
+                <p class="white-text purple-block-text paragraph-2">
+                    Dev-Ops
+                </p>
+            </div>
+        </div>
+        <div class="row d-flex mt-3 justify-content-center">
+            <div class="purple-block-mobile pb-left tech-m-block-3 col-6">
+                <p class="white-text purple-block-text paragraph-3">
+                    Cloud Migrations
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-4 col-6">
+                <p class="white-text purple-block-text paragraph-4">
+                    Agri Tech
+                </p>
+            </div>
+        </div>
+        <div class="d-flex mt-3 justify-content-center">
+            <div class="purple-block-mobile pb-left tech-m-block-5">
+                <p class="white-text purple-block-text paragraph-5">
+                    Fin Tech
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-6">
+                <p class="white-text purple-block-text paragraph-6">
+                    Deep Tech
+                </p>
+            </div>
+        </div>
+        <div class="d-flex mt-3 justify-content-center">
+            <div class="purple-block-mobile pb-left tech-m-block-7">
+                <p class="white-text purple-block-text paragraph-7">
+                    App Optimize
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-8">
+                <p class="white-text purple-block-text paragraph-8">
+                    Cloud Platform
+                </p>
+            </div>
+        </div>
+        <div class="d-flex mt-3 justify-content-center">
+            <div class="purple-block-mobile pb-left tech-m-block-9">
+                <p class="white-text purple-block-text paragraph-9">
+                    Automation Soft
+                </p>
+            </div>
+            <div class="purple-block-mobile tech-m-block-10">
+                <p class="white-text purple-block-text paragraph-10">
+                    Internet Things
+                </p>
+            </div>
+        </div>
+        <div class="d-flex mt-3 justify-content-center">
+            <div class="purple-block-mobile pb-left tech-m-block-11">
+                <p class="white-text purple-block-text paragraph-11">
+                    Data Ops
+                </p>
+            </div>
+            <div class="purple-block-mobile purple-block-mobile-tech tech-m-block-12">
+                <p class="white-text purple-block-text paragraph-12">
+                    Ai
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- {% else %}
     <div class="container-fluid fith-block-ukr mb-l-none" id="service"></div>
-    {% endif %}
+    {% endif %} -->
 
 
     <div class="container-fluid six-block mb-d-none">
@@ -989,7 +1073,7 @@
     <div class="container-fluid seventh-block mb-l-none">
         <div class="row">
             <div class="col-11 offset-1 ">
-                <h1 class="white-title " style="margin-top: 4rem!important; margin-left:1rem;">
+                <h1 class="white-title " style="margin-top: 4rem!important; margin-left:5%;">
                     {% if request.session.lang == 'eng' %}
                     Solutions
                     {% else %}
@@ -1224,7 +1308,7 @@
             </div>
             <div class="col-6 industries-block">
                 <p class="industries-text">
-                    MANUFACTURING
+                    MANUFACTURE
                 </p>
             </div>
         </div>
