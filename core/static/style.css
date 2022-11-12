@@ -1236,7 +1236,8 @@ html {
     .modal-content {
         width: 256px;
         height: 325px;
-        margin-left: 16px;
+        margin-left: 22px;
+        margin-top: -35px;
         background: rgba(255, 255, 255);
         box-shadow: -1px 5px 20px rgba(0, 0, 0, 0.25);
         /* Note: backdrop-filter has minimal browser support */
@@ -1877,10 +1878,10 @@ html {
 
     .big-purple {
         opacity: 0.2;
-        width: 234px;
+        width: 238px;
         height: 651px;
         position: absolute;
-        left: 42.5%;
+        left: 42.7%;
         top: 1%;
         object-fit: cover;
         z-index: 0;
