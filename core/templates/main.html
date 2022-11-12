@@ -1330,12 +1330,12 @@
 
                         <input type="email" size="38" class="mb-3 pretify-input"
                             placeholder="{% if request.session.lang == 'eng' %}Email{% else %}Електронна пошта{% endif %}"
-                            id="email">
+                            id="email-m">
                         <textarea rows="3" cols="41" class="pretify-input"
                             placeholder="{% if request.session.lang == 'eng' %}Guide text{% else %}Супровідний текст{% endif %}"
-                            id="guide"></textarea>
+                            id="guide-m"></textarea>
                         <div class="row  justify-content-center d-flex">
-                            <button id="form-handler" type="submit" class="pretify-button">
+                            <button id="form-handler-m" type="submit" class="pretify-button">
                                 {% if request.session.lang == 'eng' %}
                                 Send
                                 {% else %}
@@ -1387,7 +1387,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     $("#form-handler").click(function () {
-        alert('clicker')
         let email = document.getElementById('email').value;
         let text = document.getElementById('guide').value;
         $.ajax({
@@ -1407,6 +1406,27 @@
         });
         document.getElementById("email").value = "";
         document.getElementById("guide").value = "";
+    })
+    $("#form-handler-m").click(function () {
+        let email = document.getElementById('email-m').value;
+        let text = document.getElementById('guide-m').value;
+        $.ajax({
+            url: "{% url 'process_form' %}",
+            type: "post",
+            data: {
+                email: email,
+                text: text
+            },
+            success: function (result) {
+                console.log(result, "Success");
+
+            },
+            error: function (result) {
+                console.log(result, "location is bad");
+            },
+        });
+        document.getElementById("email-m").value = "";
+        document.getElementById("guide-m").value = "";
     })
 
     function clickNav() {

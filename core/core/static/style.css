@@ -500,14 +500,14 @@ html {
     color: #FFFFFF;
 }
 
-#email {
+#email, #email-m {
     border: 1px solid rgba(255, 255, 255, 0.15);
     ;
     background: #40305C;
     font-family: 'Gilroy-Bold', sans-serif;
 }
 
-#guide {
+#guide, #guide-m {
     border: 1px solid rgba(255, 255, 255, 0.15);
     ;
     background: #40305C;
