@@ -1491,7 +1491,12 @@ html {
         left: 65px;
         top: 3427px;
     }
+    .anchor-text {
 
+        font-size: 15px;
+
+    }
+    
 
     .tech-m-block-4 {
         /* position: absolute; */
