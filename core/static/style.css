@@ -488,7 +488,7 @@ html {
     /* Note: backdrop-filter has minimal browser support */
     color: white;
     border-radius: 15.4386px;
-    margin-top: -22px;
+    margin-top: 9px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     ;
     background: #40305C;
@@ -1878,7 +1878,7 @@ html {
     .external-blur {
         backdrop-filter: none !important;
         background-size: cover;
-        padding-bottom: 1rem;
+        padding-bottom: 4rem;
     }
 
     .pretify-input {
