@@ -1293,6 +1293,7 @@ html {
     .pretify-button {
         width: 140px;
         height: 40px;
+        z-index: 20;
         background: rgba(255, 255, 255, 0.15);
         backdrop-filter: blur(59.6491px);
         color: white;
