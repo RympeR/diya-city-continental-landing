@@ -67,12 +67,9 @@
             </div>
             <div class="mb-l-none" >
                 <a class="navbar-btn-toggler" omclick="openModal()" data-bs-toggle="modal" data-bs-target="#menu-modal">
-                    {% if request.session.active %}
-                    <img src="{% static 'images/menu.svg' %}" style="height:18px" alt="">
-                    {% else %}
-                    <img src="{% static 'images/menu-black.svg' %}" style="height:18px" alt="">
-                    {% endif %}
-
+                    <img src="{% static 'images/menu.svg' %}" id="base-menu" style="height:18px;display:none" alt="">
+                    <img src="{% static 'images/menu-black.svg' %}" id="black-menu" style="height:18px" alt="">
+                    
                 </ф>
             </div>
             <div id="menu-modal"  tabindex="-1" class="modal  modal-sm mb-l-none"  aria-labelledby="menu-modal" aria-hidden="true">
@@ -1548,6 +1545,13 @@
         }
     }
     $('#menu-modal').on('shown.bs.modal', function () {
+        document.querySelector('#black-menu').style.display='none'
+        document.querySelector('#base-menu').style.display='block'
+        $(".modal-backdrop.in").hide();
+    })
+    $('#menu-modal').on('hide.bs.modal', function () {
+        document.querySelector('#black-menu').style.display='block'
+        document.querySelector('#base-menu').style.display='none'
         $(".modal-backdrop.in").hide();
      })
      const openModal = () =>{
