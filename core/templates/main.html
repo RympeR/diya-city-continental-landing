@@ -1410,6 +1410,11 @@
         });
         document.getElementById("email").value = "";
         document.getElementById("guide").value = "";
+        if (localStorage.lang == 'uk'){
+            alert("Лист надіслано");
+        } else {
+            alert("Sended successfully");
+        }
     })
     $("#form-handler-m").click(function () {
         let email = document.getElementById('email-m').value;
@@ -1431,6 +1436,11 @@
         });
         document.getElementById("email-m").value = "";
         document.getElementById("guide-m").value = "";
+        if (localStorage.lang == 'uk'){
+            alert("Лист надіслано");
+        } else {
+            alert("Sended successfully");
+        }
     })
 
     function clickNav() {
