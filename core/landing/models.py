@@ -2,8 +2,8 @@ from django.db import models
 
 '''ladning contact form model email and additional text'''
 class Contact(models.Model):
-    email = models.EmailField(max_length=100)
-    text = models.TextField(max_length=1000)
+    email = models.EmailField(max_length=100, verbose_name= 'Електронна пошта')
+    text = models.TextField(max_length=1000, verbose_name='Супровідний текст')
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -18,6 +18,6 @@ class Contact(models.Model):
         return self.created.strftime('%b %e %Y')
     
     class Meta:
-        verbose_name = 'Обратная связь'
-        verbose_name_plural = 'Оставленные отзывы'
+        verbose_name = 'Супровідний текст'
+        verbose_name_plural = 'Супровідний текст'
         ordering = ('-created',)
