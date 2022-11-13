@@ -1574,7 +1574,7 @@ html {
 
     .convenience-h3 {
         margin-bottom: -17px;
-        padding-top: 0rem;
+        padding-top: 1rem;
         margin-bottom: 20px;
     }
 
@@ -1868,7 +1868,7 @@ html {
         text-align: center;
     }
     .disabled-lang{
-        opacity: 0.3;
+        opacity: 0.7;
     }
     .external-blur {
         backdrop-filter: none !important;
