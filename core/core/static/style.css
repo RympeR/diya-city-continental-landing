@@ -488,9 +488,9 @@ html {
     /* Note: backdrop-filter has minimal browser support */
     color: white;
     border-radius: 15.4386px;
-    margin-top: 9px;
+    margin-top: -22px;
     border: 1px solid rgba(255, 255, 255, 0.15);
-    ;
+    ;   
     background: #40305C;
     font-family: 'Gilroy';
     font-style: normal;
@@ -1297,7 +1297,7 @@ html {
         backdrop-filter: blur(59.6491px);
         color: white;
         border-radius: 15.4386px;
-        margin-top: -22px;
+        margin-top: 9px;
         border: 1px solid rgba(255, 255, 255, 0.15);
         background: #40305C;
         font-family: 'Gilroy';
