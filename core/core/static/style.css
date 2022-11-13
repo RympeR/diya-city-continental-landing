@@ -498,6 +498,7 @@ html {
     font-size: 12px;
     line-height: 11px;
     color: #FFFFFF;
+    z-index: 20;
 }
 
 #email, #email-m {
