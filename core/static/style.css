@@ -1207,7 +1207,7 @@ html {
     }
 
     .block-4 {
-        min-height: 700px;
+        min-height: 730px;
         max-width: 100%;
         margin-bottom: -44px;
         box-sizing: content-box;
@@ -1277,7 +1277,7 @@ html {
         line-height: 37px;
         color: #FFFFFF;
         margin-bottom: 5px;
-        margin: -5rem auto 1rem auto;
+        margin: -3.5rem auto 1rem auto;
     }
 
     .cards-block-convenience-1 {
