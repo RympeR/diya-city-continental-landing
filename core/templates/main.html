@@ -66,8 +66,13 @@
                     style="margin-left: -18px;" id="en-lang">EN</button>
             </div>
             <div class="mb-l-none" >
-                <a class="navbar-btn-toggler" data-bs-toggle="modal" data-bs-target="#menu-modal">
-                   <img src="{% static 'images/menu.svg' %}" style="height:18px" alt="">
+                <a class="navbar-btn-toggler" omclick="openModal()" data-bs-toggle="modal" data-bs-target="#menu-modal">
+                    {% if request.session.active %}
+                    <img src="{% static 'images/menu.svg' %}" style="height:18px" alt="">
+                    {% else %}
+                    <img src="{% static 'images/menu-black.svg' %}" style="height:18px" alt="">
+                    {% endif %}
+
                 </ф>
             </div>
             <div id="menu-modal"  tabindex="-1" class="modal  modal-sm mb-l-none"  aria-labelledby="menu-modal" aria-hidden="true">
@@ -1545,7 +1550,12 @@
     $('#menu-modal').on('shown.bs.modal', function () {
         $(".modal-backdrop.in").hide();
      })
-     $('.mobile-link').on('click', function(e){
+     const openModal = () =>{
+        localStorage.active = true
+        
+    }
+    $('.mobile-link').on('click', function(e){
+        localStorage.active = false
         var div = document.getElementById("menu-modal");
         if (div.classList.contains("show")) {
             div.classList.remove("show");

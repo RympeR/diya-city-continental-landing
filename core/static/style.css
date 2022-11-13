@@ -1285,6 +1285,11 @@ html {
         margin-left: -15px;
     }
 
+    .menu-btn{
+        height: 10px;
+        background-image: url('./images/menu.svg');
+    }
+
     .pretify-button {
         width: 140px;
         height: 40px;
